@@ -126,7 +126,7 @@
                      <div class="col-sm-12 col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-duration="1500ms" data-wow-delay="000ms" data-v-637754db>
                         <div class="site-footer__widget site-footer__widget__about" data-v-637754db>
                            <a aria-current="page" href="index.html" class="router-link-active router-link-exact-active site-footer__widget__logo" data-v-637754db>
-                            <img src="{{asset('images/logo-white.png')}}" width="127" height="49" alt="Logo" data-v-637754db></a>
+                            <img src="{{asset('images/logo-white.png')}}" width="250" height="49" alt="Logo" data-v-637754db></a>
                            <p class="site-footer__widget__text" data-v-637754db>N9 Delta State</p>
                         </div>
                      </div>
