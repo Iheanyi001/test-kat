@@ -23,6 +23,8 @@
         <link rel="stylesheet" href="_nuxt/index.CIolG9YW.css">
         <link rel="stylesheet" href="_nuxt/SearchPopup.0PP6UZ_v.css">
         <!-- Styles -->
+
+
         @livewireStyles
     </head>
     <body>
@@ -102,21 +104,19 @@
                                         <span>Donate Now</span>
                                         <i class="fa fa-heart"></i>
                                     </a>
-                                    <a href="#" class="main-header__btn search-toggler">
+                                    <a href="#" style="display:none" class="main-header__btn search-toggler">
                                         <i class="paroti-icon-magnifying-glass"></i>
                                     </a>
 
-                                    <a href="#" class="main-header__toggler mobile-nav__toggler">
+                                    <a href="javascript:void(0)" onclick="openNav()" class="main-header__toggler mobile-nav__toggler">
                                         <span></span>
                                         <span></span>
                                         <span></span>
                                     </a>
-
                                  </div>
                               </div>
                            </nav>
                         </header>
-
             {{ $slot }}
 
         <footer class="site-footer" style="background-image:url(_nuxt/footer-bg-1-1.DQ6J-Ydo.jpg);" data-v-637754db>
@@ -182,128 +182,33 @@
             </div>
             <!---->
          </footer>
-         <div class="mobile-nav__wrapper" data-v-4d305a09>
-            <div class="mobile-nav__overlay mobile-nav__toggler" data-v-4d305a09></div>
-            <div class="mobile-nav__content" data-v-4d305a09>
-               <a href="#" class="mobile-nav__close mobile-nav__toggler" data-v-4d305a09><span data-v-4d305a09></span><span data-v-4d305a09></span></a>
-               <div class="logo-box" data-v-4d305a09><a aria-current="page" href="index.html" class="router-link-active router-link-exact-active" aria-label="logo image" data-v-4d305a09>
-                <img src="{{asset('images/logo-white.png')}}" width="250" height="49" alt="KAT Foundation" data-v-4d305a09></a></div>
-               <div class="mobile-nav__container" data-v-4d305a09>
-                  <ul class="mobile-menu__list" data-v-4d305a09>
+         <div id="mobile-nav__wrapper" class="mobile-nav__wrapper" >
+            <div class="mobile-nav__overlay mobile-nav__toggler" ></div>
+            <div class="mobile-nav__content" >
+               <a href="javascript:void(0)" onclick="openNav()" class="mobile-nav__close mobile-nav__toggler" ><span ></span><span ></span></a>
+               <div class="logo-box" ><a aria-current="page" href="index.html" class="router-link-active router-link-exact-active" aria-label="logo image" >
+                <img src="{{asset('images/logo-white.png')}}" width="250" height="49" alt="KAT Foundation" ></a></div>
+               <div class="mobile-nav__container" >
+                  <ul class="mobile-menu__list" >
                      <!--[-->
-                     <li class="menu-item-has-children" data-v-4d305a09>
-                        <a href="#" data-v-4d305a09>Home <button data-v-4d305a09><i class="fa fa-angle-down" data-v-4d305a09></i></button></a>
-                        <ul class="sub-menu" data-v-4d305a09>
-                           <!--[-->
-                           <li data-v-4d305a09>
-                              <a aria-current="page" href="index.html" class="router-link-active router-link-exact-active" data-v-4d305a09>
-                                 Home 01 <!---->
-                              </a>
-                              <!---->
-                           </li>
-                           <li data-v-4d305a09>
-                              <a href="index-2.html" class="" data-v-4d305a09>
-                                 Home 02 <!---->
-                              </a>
-                              <!---->
-                           </li>
-                           <li data-v-4d305a09>
-                              <a href="index-3.html" class="" data-v-4d305a09>
-                                 Home 03 <!---->
-                              </a>
-                              <!---->
-                           </li>
-                           <li data-v-4d305a09>
-                              <a aria-current="page" href="index.html#" class="router-link-active router-link-exact-active" data-v-4d305a09>Header Styles <button data-v-4d305a09><i class="fa fa-angle-down" data-v-4d305a09></i></button></a>
-                              <ul class="sub-menu" data-v-4d305a09>
-                                 <!--[-->
-                                 <li data-v-4d305a09><a aria-current="page" href="index.html" class="router-link-active router-link-exact-active" data-v-4d305a09>Header 01</a></li>
-                                 <li data-v-4d305a09><a href="index-2.html" class="" data-v-4d305a09>Header 02</a></li>
-                                 <li data-v-4d305a09><a href="index-3.html" class="" data-v-4d305a09>Header 03</a></li>
-                                 <!--]-->
-                              </ul>
-                           </li>
-                           <!--]-->
-                        </ul>
+                     <li class="menu-item-has-children" >
+                        <a href="#" >Home </a>
+
                      </li>
-                     <li class="menu-item-has-children" data-v-4d305a09>
-                        <a href="#" data-v-4d305a09>Pages <button data-v-4d305a09><i class="fa fa-angle-down" data-v-4d305a09></i></button></a>
-                        <ul class="sub-menu" data-v-4d305a09>
-                           <!--[-->
-                           <li data-v-4d305a09>
-                              <a href="about.html" class="" data-v-4d305a09>
-                                 About <!---->
-                              </a>
-                              <!---->
-                           </li>
-                           <li data-v-4d305a09>
-                              <a href="volunteers.html" class="" data-v-4d305a09>
-                                 Our volunteers <!---->
-                              </a>
-                              <!---->
-                           </li>
-                           <!--]-->
-                        </ul>
+                     <li class="menu-item-has-children" >
+                        <a href="#" >About </a>
+
                      </li>
-                     <li class="menu-item-has-children" data-v-4d305a09>
-                        <a href="#" data-v-4d305a09>Donations <button data-v-4d305a09><i class="fa fa-angle-down" data-v-4d305a09></i></button></a>
-                        <ul class="sub-menu" data-v-4d305a09>
-                           <!--[-->
-                           <li data-v-4d305a09>
-                              <a href="donations.html" class="" data-v-4d305a09>
-                                 Donations <!---->
-                              </a>
-                              <!---->
-                           </li>
-                           <li data-v-4d305a09>
-                              <a href="donations-details.html" class="" data-v-4d305a09>
-                                 Donations Details <!---->
-                              </a>
-                              <!---->
-                           </li>
-                           <!--]-->
-                        </ul>
+                     <li class="menu-item-has-children" >
+                        <a href="#" >Donations </a>
+
                      </li>
-                     <li class="menu-item-has-children" data-v-4d305a09>
-                        <a href="#" data-v-4d305a09>Events <button data-v-4d305a09><i class="fa fa-angle-down" data-v-4d305a09></i></button></a>
-                        <ul class="sub-menu" data-v-4d305a09>
-                           <!--[-->
-                           <li data-v-4d305a09>
-                              <a href="events.html" class="" data-v-4d305a09>
-                                 Events <!---->
-                              </a>
-                              <!---->
-                           </li>
-                           <li data-v-4d305a09>
-                              <a href="events-details.html" class="" data-v-4d305a09>
-                                 Events Details <!---->
-                              </a>
-                              <!---->
-                           </li>
-                           <!--]-->
-                        </ul>
+                     <li class="menu-item-has-children" >
+                        <a href="#" >Events </a>
                      </li>
-                     <li class="menu-item-has-children" data-v-4d305a09>
-                        <a href="#" data-v-4d305a09>Blogs <button data-v-4d305a09><i class="fa fa-angle-down" data-v-4d305a09></i></button></a>
-                        <ul class="sub-menu" data-v-4d305a09>
-                           <!--[-->
-                           <li data-v-4d305a09>
-                              <a href="blogs.html" class="" data-v-4d305a09>
-                                 Blogs <!---->
-                              </a>
-                              <!---->
-                           </li>
-                           <li data-v-4d305a09>
-                              <a href="blog-details.html" class="" data-v-4d305a09>
-                                 Blog Details <!---->
-                              </a>
-                              <!---->
-                           </li>
-                           <!--]-->
-                        </ul>
-                     </li>
-                     <li class="" data-v-4d305a09>
-                        <a href="#" data-v-4d305a09>
+
+                     <li class="" >
+                        <a href="#" >
                            Contact <!---->
                         </a>
                         <!---->
@@ -311,16 +216,16 @@
                      <!--]-->
                   </ul>
                </div>
-               <ul class="mobile-nav__contact list-unstyled" data-v-4d305a09>
-                  <li data-v-4d305a09><i class="fa fa-phone" data-v-4d305a09></i><a href="tel:+8898006802" data-v-4d305a09>+ 88 ( 9800 ) 6802</a></li>
-                  <li data-v-4d305a09><i class="fa fa-envelope" data-v-4d305a09></i><a href="mailto:needhelp@company.com" data-v-4d305a09>needhelp@company.com</a></li>
-                  <li data-v-4d305a09><i class="fa fa-map-marker-alt" data-v-4d305a09></i> 88 Broklyn Golden Road Street <br data-v-4d305a09> New York. USA </li>
+               <ul class="mobile-nav__contact list-unstyled" >
+                  <li ><i class="fa fa-phone" ></i><a href="tel:+8898006802" >+234990099900</a></li>
+                  <li ><i class="fa fa-envelope" ></i><a href="mailto:needhelp@company.com" >info@kingateketomfoundation.org</a></li>
+                  <li ><i class="fa fa-map-marker-alt" ></i> N9. Delta state <br > Nigeria </li>
                </ul>
-               <ul class="mobile-nav__social" data-v-4d305a09>
-                  <li data-v-4d305a09><a href="#" data-v-4d305a09><i class="fab fa-twitter" data-v-4d305a09></i></a></li>
-                  <li data-v-4d305a09><a href="#" data-v-4d305a09><i class="fab fa-facebook-f" data-v-4d305a09></i></a></li>
-                  <li data-v-4d305a09><a href="#" data-v-4d305a09><i class="fab fa-pinterest-p" data-v-4d305a09></i></a></li>
-                  <li data-v-4d305a09><a href="#" data-v-4d305a09><i class="fab fa-instagram" data-v-4d305a09></i></a></li>
+               <ul class="mobile-nav__social" >
+                  <li ><a href="{{route('home')}}" ><i class="fab fa-twitter" ></i></a></li>
+                  <li ><a href="https://www.facebook.com/kat.foundation1?mibextid=ZbWKwL" ><i class="fab fa-facebook-f" ></i></a></li>
+                  <li ><a href="{{route('home')}}" ><i class="fab fa-pinterest-p" ></i></a></li>
+                  <li ><a href="https://www.instagram.com/katfoundation2024/" ><i class="fab fa-instagram" ></i></a></li>
                </ul>
             </div>
          </div>
@@ -509,9 +414,16 @@ breakpoints: {
 }
 });
 
+function openNav(){
+ let navCon =  document.getElementById("mobile-nav__wrapper");
+ navCon.classList.toggle("expanded");
+}
+
 
 
 </script>
+
+
 @stack('scripts')
 <!-- Mirrored from paroti-nuxtjs.vercel.app/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 24 Sep 2024 21:28:47 GMT -->
 </html>

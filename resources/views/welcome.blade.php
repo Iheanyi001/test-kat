@@ -431,8 +431,8 @@
             <h2 class="sec-title__title">Our Board of Trustees</h2>
          </div>
          <div class="donations-carousel">
-            <div class="flex gap-3">
-                <div class="col-md-6"  aria-hidden="true" tabindex="-1">
+            <div class="row">
+                <div class="col-md-6 mb-5"  aria-hidden="true" tabindex="-1">
                     <div class="donations-card" style="--accent-color: #df5311;">
                         <div class="donations-card__image">
                             <img style="height: 500px" src="{{asset('images/trustee1.jpg')}}" alt="Donation Image"/>
@@ -443,7 +443,7 @@
                     </div>
                 </div>
 
-                <div class="col-md-6"  aria-hidden="true" tabindex="-1">
+                <div class="col-md-6 mb-5"  aria-hidden="true" tabindex="-1">
                     <div class="donations-card" style="--accent-color: #df5311;">
                         <div class="donations-card__image">
                             <img style="height: 500px" src="{{asset('images/trustee2.jpg')}}" alt="Donation Image">
@@ -639,7 +639,8 @@
 
                     <div class="blog-card">
                         <div class="blog-card__image">
-                            <img style="height: 282px" src="{{asset('images/green.webp')}}" alt="Online legal advice for asylum seekers in Greece">
+                            <img style="height: 282px" src="{{asset('images/green.webp
+                            ')}}" alt="Online legal advice for asylum seekers in Greece">
                             <div class="blog-card__date">
                                 <span>2025</span>
                             </div>
