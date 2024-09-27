@@ -22,8 +22,6 @@
         <link rel="stylesheet" href="_nuxt/swiper-vue.C8kddlLw.css">
         <link rel="stylesheet" href="_nuxt/index.CIolG9YW.css">
         <link rel="stylesheet" href="_nuxt/SearchPopup.0PP6UZ_v.css">
-
-
         <!-- Styles -->
         @livewireStyles
     </head>
