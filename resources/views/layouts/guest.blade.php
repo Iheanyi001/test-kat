@@ -24,7 +24,11 @@
         <link rel="stylesheet" href="_nuxt/SearchPopup.0PP6UZ_v.css">
         <!-- Styles -->
 
-
+        <style>
+            [data-action="stop"] {
+                display:none!important;
+            }
+        </style>
         @livewireStyles
     </head>
     <body>

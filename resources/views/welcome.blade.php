@@ -21,7 +21,7 @@
                  <div class="slider-one__item">
                     <div class="slider-one__image" style="background-image: url({{asset('images/homepage/hero2.jpg')}})"></div>
                     <div class="container">
-                       <h2 class="slider-one__title">Empowering Lives with <span>Education</span> <br>, Healthcare, and Shelter</h2>
+                       <h2 class="slider-one__title">Empowering Lives with <span>Education,</span> <br>Healthcare, and Shelter</h2>
                        <p class="slider-one__text">Providing essential support for those in need.</p>
                        <div class="slider-one__btns"><a href="about.html" class="thm-btn slider-one__btn"><span>Discover More</span></a></div>
                     </div>
