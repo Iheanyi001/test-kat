@@ -14,7 +14,7 @@
         <!-- Scripts -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
         <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-        <link rel="icon" type="image/x-icon" href="favicon.ico">
+        <link rel="icon" type="image/x-icon" href="{{asset('images/logo-icon.png')}}">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
         <!--[if (lt IE 9)]><script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.helper.ie8.js"></script><![endif]-->
         @vite(['resources/css/app.css', 'resources/css/style.css'])
@@ -106,6 +106,12 @@
                                     </a>
                                     <a href="#" class="main-header__btn search-toggler">
                                         <i class="paroti-icon-magnifying-glass"></i>
+                                    </a>
+
+                                    <a href="#" class="main-header__toggler mobile-nav__toggler">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
                                     </a>
 
                                  </div>
