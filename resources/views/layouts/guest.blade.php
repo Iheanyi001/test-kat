@@ -14,6 +14,8 @@
         <!-- Scripts -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
         <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
+
         <link rel="icon" type="image/x-icon" href="{{asset('images/logo-icon.png')}}">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
         <!--[if (lt IE 9)]><script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.helper.ie8.js"></script><![endif]-->
@@ -30,11 +32,13 @@
             }
         </style>
         @livewireStyles
+        @stack('styles')
     </head>
     <body>
         <div id="__nuxt">
             <div>
-               <!--<div id="preloader"  class="preloader">
+
+               <div id="preloader"  class="preloader">
                   <div class="preloader__inner">
                      <span></span>
                      <span></span>
@@ -45,8 +49,9 @@
                      <span></span>
                      <span></span>
                   </div>
-               </div>-->
-               <div id="main">
+               </div>
+
+               <div id="main" style="display: none">
                   <div>
                      <!--[-->
                      <div>
@@ -55,9 +60,9 @@
                               <div class="container-fluid">
                                  <div class="topbar__inner">
                                     <ul class="list-unstyled topbar__info">
-                                       <li><i class="fa fa-map"></i><a href="#">N9. Delta state</a></li>
+                                       <li><i class="fa fa-map"></i><a href="#">No.4 Hospital road Portharcourt, Rivers State </a></li>
                                        <li><i class="fa fa-envelope-open"></i><a href="mailto:info@kingateketomfoundation.org">info@kingateketomfoundation.org</a></li>
-                                       <li><i class="fa fa-mobile"></i><a href="tel:+234990099900">+234990099900</a></li>
+                                       <li><i class="fa fa-mobile"></i><a href="tel:(+234) 8037447114">(+234) 8037447114</a></li>
                                     </ul>
                                     <div class="topbar__social">
                                         <a href="/"><i class="fab fa-twitter"></i></a>
@@ -65,16 +70,16 @@
                                         <a href="/"><i class="fab fa-pinterest"></i></a>
                                         <a href="https://www.instagram.com/katfoundation2024/"><i class="fab fa-instagram"></i></a>
                                     </div>
-                                    <ul class="list-unstyled topbar__links">
-                                       <!---<li><a href="#">Login</a></li>
-                                       <li><a href="#">Register</a></li>-->
-                                    </ul>
+                                    <!--<ul class="list-unstyled topbar__links">
+                                       <li><a href="#">Login</a></li>
+                                       <li><a href="#">Register</a></li>
+                                    </ul>-->
                                  </div>
                               </div>
                            </div>
                            <nav class="main-menu sticky-header">
                               <div class="container-fluid">
-                                 <a aria-current="page" href="index.html" class="router-link-active router-link-exact-active main-header__logo">
+                                 <a aria-current="page" href="{{route('home')}}" class="router-link-active router-link-exact-active main-header__logo">
                                     <img src="{{asset('images/logo.png')}}" width="250" height="49" alt></a>
                                  <ul class="main-menu__list">
                                     <!--[-->
@@ -83,11 +88,11 @@
                                     </li>
 
                                     <li class="dropdown">
-                                        <a href="events.html" class="">About Us</a>
+                                        <a href="{{route('about')}}" class="">About Us</a>
                                      </li>
 
                                     <li class="dropdown">
-                                       <a href="events.html" class="">Events</a>
+                                       <a href="{{route('events')}}" class="">Events</a>
                                     </li>
 
                                     <li class="dropdown">
@@ -129,9 +134,10 @@
                   <div class="row" data-v-637754db>
                      <div class="col-sm-12 col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-duration="1500ms" data-wow-delay="000ms" data-v-637754db>
                         <div class="site-footer__widget site-footer__widget__about" data-v-637754db>
-                           <a aria-current="page" href="index.html" class="router-link-active router-link-exact-active site-footer__widget__logo" data-v-637754db>
+                           <a aria-current="page" href="{{route('home')}}" class="router-link-active router-link-exact-active site-footer__widget__logo" data-v-637754db>
                             <img src="{{asset('images/logo-white.png')}}" width="250" height="49" alt="Logo" data-v-637754db></a>
-                           <p class="site-footer__widget__text" data-v-637754db>N9 Delta State</p>
+                           <p class="site-footer__widget__text" data-v-637754db>No.4 Hospital road Portharcourt, Rivers State
+                        </p>
                         </div>
                      </div>
                      <div class="col-sm-12 col-md-6 col-lg-6 col-xl-2 wow fadeInUp" data-wow-duration="1500ms" data-wow-delay="100ms" data-v-637754db>
@@ -142,7 +148,7 @@
                               <li data-v-637754db><a href="about.html" class="" data-v-637754db>About us</a></li>
                               <li data-v-637754db><a href="contact.html" class="" data-v-637754db>Contact Us</a></li>
                               <li data-v-637754db><a href="donation.html" class="" data-v-637754db>Donations</a></li>
-                              <li data-v-637754db><a href="events.html" class="" data-v-637754db>Events</a></li>
+                              <li data-v-637754db><a href="{{route('events')}}" class="" data-v-637754db>Events</a></li>
                            </ul>
                         </div>
                      </div>
@@ -163,7 +169,7 @@
                            <h3 class="site-footer__widget__title" data-v-637754db>Contact</h3>
                            <ul class="list-unstyled site-footer__widget__contact" data-v-637754db>
                               <li data-v-637754db><i class="fa fa-envelope-open" data-v-637754db></i><a href="mailto:needhelp@company.com" data-v-637754db>needhelp@company.com</a></li>
-                              <li data-v-637754db><i class="fa fa-mobile" data-v-637754db></i><a href="tel:+234990099900" data-v-637754db>+234990099900</a></li>
+                              <li data-v-637754db><i class="fa fa-mobile" data-v-637754db></i><a href="tel:(+234) 8037447114" data-v-637754db>(+234) 8037447114</a></li>
                            </ul>
                         </div>
                      </div>
@@ -179,8 +185,18 @@
             <div class="site-footer__bottom" data-v-637754db>
                <div class="container" data-v-637754db>
                   <div class="site-footer__bottom__inner" data-v-637754db>
-                     <p class="site-footer__bottom__text" data-v-637754db> © Copyright <span class="dynamic-year" data-v-637754db>2024</span> by Paroti NuxtJS Template. </p>
-                     <div class="site-footer__social" data-v-637754db><a href="#" data-v-637754db><i class="fab fa-twitter" data-v-637754db></i></a><a href="#" data-v-637754db><i class="fab fa-facebook" data-v-637754db></i></a><a href="#" data-v-637754db><i class="fab fa-pinterest" data-v-637754db></i></a><a href="#" data-v-637754db><i class="fab fa-instagram" data-v-637754db></i></a></div>
+                     <p class="site-footer__bottom__text" data-v-637754db> © Copyright
+                        <span class="dynamic-year" data-v-637754db>2024</span> KAT Foundation
+                    </p>
+                    <p class="site-footer__bottom__text" data-v-637754db> Made by
+                        <a href="https://bytebouwers.com.ng" target="_blank" class="dynamic-year" data-v-637754db>ByteBouwers</a>
+                    </p>
+                     <div class="site-footer__social" data-v-637754db>
+                        <a href="#" data-v-637754db><i class="fab fa-twitter" data-v-637754db></i></a>
+                        <a href="#" data-v-637754db><i class="fab fa-facebook" data-v-637754db></i></a>
+                        <a href="#" data-v-637754db><i class="fab fa-pinterest" data-v-637754db></i></a>
+                        <a href="#" data-v-637754db><i class="fab fa-instagram" data-v-637754db></i></a>
+                    </div>
                   </div>
                </div>
             </div>
@@ -190,7 +206,7 @@
             <div class="mobile-nav__overlay mobile-nav__toggler" ></div>
             <div class="mobile-nav__content" >
                <a href="javascript:void(0)" onclick="openNav()" class="mobile-nav__close mobile-nav__toggler" ><span ></span><span ></span></a>
-               <div class="logo-box" ><a aria-current="page" href="index.html" class="router-link-active router-link-exact-active" aria-label="logo image" >
+               <div class="logo-box" ><a aria-current="page" href="{{route('home')}}" class="router-link-active router-link-exact-active" aria-label="logo image" >
                 <img src="{{asset('images/logo-white.png')}}" width="250" height="49" alt="KAT Foundation" ></a></div>
                <div class="mobile-nav__container" >
                   <ul class="mobile-menu__list" >
@@ -208,7 +224,7 @@
 
                      </li>
                      <li class="menu-item-has-children" >
-                        <a href="#" >Events </a>
+                        <a href="{{route('events')}}" >Events </a>
                      </li>
 
                      <li class="" >
@@ -221,7 +237,7 @@
                   </ul>
                </div>
                <ul class="mobile-nav__contact list-unstyled" >
-                  <li ><i class="fa fa-phone" ></i><a href="tel:+8898006802" >+234990099900</a></li>
+                  <li ><i class="fa fa-phone" ></i><a href="tel:+8898006802" >(+234) 8037447114</a></li>
                   <li ><i class="fa fa-envelope" ></i><a href="mailto:needhelp@company.com" >info@kingateketomfoundation.org</a></li>
                   <li ><i class="fa fa-map-marker-alt" ></i> N9. Delta state <br > Nigeria </li>
                </ul>
@@ -249,24 +265,62 @@
 </div>
 </div>
 <div id="teleports"></div>
+<div onclick="scrollToTop()" id="scrollToTopBtn">
+    <a class="scroll-to-target scroll-to-top animated fadeInUp">
+        <i class="fa fa-angle-up"></i>
+    </a>
+</div>
 </body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
 <!-- NOTE: prior to v2.2.1 tiny-slider.js need to be in <body> -->
+<script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+
 <script>
+    window.onload = function() {
+        // Set a delay before hiding the preloader and showing the main content
+        setTimeout(function() {
+            // Hide the preloader
+            document.getElementById("preloader").style.display = "none";
 
-window.addEventListener('load', function () {
-    // Select the preloader element
-    const preloader = document.getElementById('preloader');
-    const main = document.getElementById('main');
+            // Show the main content
+            document.getElementById("main").style.display = "block";
+        }, 1000); // Delay of 1000ms (1 second)
+    };
 
-    // Hide or remove the preloader once the page is loaded
-    if (preloader) {
-        console.log('preloader');
-document.querySelector('#preloader').style.display = 'none!important';
-        console.log('preloader2');
-        main.style.display =  'flex';
+    // Get the button
+let scrollToTopBtn = document.getElementById("scrollToTopBtn");
+
+// Show the button when the user scrolls down 100px from the top
+window.onscroll = function() {
+    scrollFunction();
+};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        scrollToTopBtn.style.display = "block"; // Show button
+    } else {
+        scrollToTopBtn.style.display = "none"; // Hide button
     }
-});
+}
+
+// When the user clicks on the button, scroll to the top
+function scrollToTop() {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth" // Smooth scroll effect
+    });
+}
+
+</script>
+<script>
+    const lightbox = GLightbox({
+        selector: '.glightbox',
+        touchNavigation: true,
+        loop: true,
+        autoplayVideos: true
+    });
+</script>
+<script>
 
 const swiper = new Swiper('.swiper', {
 // Optional parameters
@@ -422,8 +476,6 @@ function openNav(){
  let navCon =  document.getElementById("mobile-nav__wrapper");
  navCon.classList.toggle("expanded");
 }
-
-
 
 </script>
 

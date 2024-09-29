@@ -9,7 +9,7 @@
                  <div class="slider-one__item">
                     <div class="slider-one__image" style="background-image: url({{asset('images/homepage/hero1.jpg')}})"></div>
                     <div class="container">
-                       <h2 class="slider-one__title">Building Brighter  <span>Futures</span> <br> Through Compassion and Action. </h2>
+                       <h2 class="slider-one__title"> Building <span>Brighter</span> <br> Futures with Compassion </h2>
                        <p class="slider-one__text">Together, we can uplift communities and change lives.</p>
                        <div class="slider-one__btns"><a href="about.html" class="thm-btn slider-one__btn"><span>Discover More</span></a></div>
                     </div>
@@ -21,7 +21,7 @@
                  <div class="slider-one__item">
                     <div class="slider-one__image" style="background-image: url({{asset('images/homepage/hero2.jpg')}})"></div>
                     <div class="container">
-                       <h2 class="slider-one__title">Empowering Lives with <span>Education,</span> <br>Healthcare, and Shelter</h2>
+                       <h2 class="slider-one__title">Empowering Lives:<br> Education, Care, Shelter</h2>
                        <p class="slider-one__text">Providing essential support for those in need.</p>
                        <div class="slider-one__btns"><a href="about.html" class="thm-btn slider-one__btn"><span>Discover More</span></a></div>
                     </div>
@@ -33,10 +33,10 @@
                  <div class="slider-one__item">
                     <div class="slider-one__image" style="background-image: url({{asset('images/homepage/hero3.jpg')}})"></div>
                     <div class="container">
-                       <h2 class="slider-one__title">Join Us in Making a   <span>Lasting</span> <br> Difference in Our Communities</h2>
+                       <h2 class="slider-one__title">Join Us:<br/> Make a Lasting Impact</h2>
                        <p class="slider-one__text">Be a part of a movement dedicated to sustainable change.</p>
                        <div class="slider-one__btns">
-                        <a href="route('home')" class="thm-btn slider-one__btn"><span>Donate</span></a></div>
+                        <a href="#membership-form" class="thm-btn slider-one__btn"><span>Join Us</span></a></div>
                     </div>
                  </div>
                  <!--]--><!---->
@@ -60,7 +60,12 @@
                     <div class="about-two__image__shape-1" ></div>
                     <div class="about-two__image__shape-2" ></div>
                     <div class="about-two__image__shape-3" ></div>
-                    <img src="{{asset('images/king1.jpg')}}" class="wow fadeInLeft" data-wow-duration="1500ms" alt="" >
+                    <img src="{{asset('images/king1.png')}}" class="wow fadeInLeft" data-wow-duration="1500ms" alt="" >
+                    <div style="position: absolute;left:0;bottom: 0;height: auto;width:100%;background-color: #df5311;padding: 5px; padding-top:10px">
+                        <h1 style="text-transform: uppercase; font-size: 14px; color: white;font-weight: bold;">
+                            His Royal Majesty, King (Dr) Michael Ateke Tom, JP
+                        </h1>
+                    </div>
                     <div style="display:none" class="about-two__image__caption" >
                        <div >
                           <h3 class="about-two__image__caption__count count-box d-flex justify-content-center" >
@@ -77,12 +82,16 @@
               <div class="col-md-12 col-lg-6">
                  <div class="about-two__content">
                     <div class="sec-title">
-                       <p class="sec-title__tagline">Our Journey</p>
-                       <h2 class="sec-title__title">From Conflict to Crown</h2>
+                       <p class="sec-title__tagline">Executive Brief</p>
+                       <h2 class="sec-title__title">From the Chairman, King AtekeTom Foundation</h2>
                     </div>
-                    <p class="about-two__text">The King AtekeTom Foundation’s journey is a remarkable tale of courage, sacrifice, and transformative leadership. It begins with a man whose path from militant to monarch reflects a deep commitment to his people. As the leader of the Niger Delta Vigilante/Niger Delta Patriotic Forces in 2006 that traansformed to a Movement For The Emancipation Of The Niger Delta (MEND), he faced relentless attacks and government hostility, yet his resolve never wavered. His mission was clear: to secure amnesty
-                        for his men and provide them with the skills and jobs needed to build a new life.</p>
-                    <div class="about-two__btns mt-10" style="margin-bottom: 20px"><a href="about.html" class="thm-btn about-two__btn"><span>Discover Our Full Story</span></a></div>
+                    <p class="about-two__text">The King AtekeTom Foundation stands as a beacon of hope and resilience, born from a journey of transformation and selflessness. Our foundation was established to uplift the downtrodden, empower the disenfranchised, and create opportunities where none existed before. This mission is deeply rooted in our history,
+                        a history of overcoming adversity and striving for a better future for all.</p>
+                    <div class="about-two__btns mt-10" style="margin-bottom: 20px">
+                        <a href="{{route('brief')}}" class="thm-btn about-two__btn">
+                            <span>Continue Reading</span>
+                        </a>
+                    </div>
                  </div>
               </div>
            </div>
@@ -283,7 +292,7 @@
                  <div class="testimonials-one__content">
                     <div class="sec-title">
                        <p class="sec-title__tagline">Our feedbacks</p>
-                       <h2 class="sec-title__title">What They’re Saying  <br>Voices of Impact</h2>
+                       <h2 class="sec-title__title">Voices of Impact: <br>Hear Their Stories</h2>
                     </div>
                     <p class="testimonials-one__text">The true measure of our success is found in the stories of those whose lives have been touched by the King AtekeTom Foundation. Here’s what some of our beneficiaries, partners,
                      <br>and supporters have to say about the difference we’re making:</p>
@@ -357,7 +366,11 @@
                     <div class="gallery-card">
                        <div class="gallery-card__image">
                         <img style="height:192px"  src="{{asset('images/edu_program/3.jpg')}}" alt="#"></div>
-                       <div class="gallery-card__content"><a class="img-popup" href="{{asset('images/edu_program/3.jpg')}}"><i class="fab fa-instagram" c673d43c></i></a></div>
+                       <div class="gallery-card__content">
+                            <a class="glightbox img-popup" href="{{asset('images/edu_program/3.jpg')}}">
+                            <i class="fab fa-instagram" c673d43c></i>
+                            </a>
+                        </div>
                     </div>
                     <!--]--><!---->
                  </div>
@@ -366,7 +379,7 @@
                     <div class="gallery-card" >
                        <div  class="gallery-card__image">
                         <img style="height:192px" src="{{asset('images/med_program/img2.jpg')}}" alt="#"></div>
-                       <div  class="gallery-card__content"><a class="img-popup" href="{{asset('images/med_program/img2.jpg')}}"><i class="fab fa-instagram"></i></a></div>
+                       <div  class="gallery-card__content"><a class="glightbox img-popup" href="{{asset('images/med_program/img2.jpg')}}"><i class="fab fa-instagram"></i></a></div>
                     </div>
                     <!--]--><!---->
                  </div>
@@ -375,7 +388,7 @@
                     <div class="gallery-card" >
                        <div class="gallery-card__image">
                         <img style="height:192px" src="{{asset('images/health_program/4.jpg')}}" alt="#"></div>
-                       <div  class="gallery-card__content"><a class="img-popup" href="{{asset('images/health_program/4.jpg')}}"><i class="fab fa-instagram" c673d43c></i></a></div>
+                       <div  class="gallery-card__content"><a class="glightbox img-popup" href="{{asset('images/health_program/4.jpg')}}"><i class="fab fa-instagram" c673d43c></i></a></div>
                     </div>
                     <!--]--><!---->
                  </div>
@@ -384,7 +397,7 @@
                     <div class="gallery-card">
                        <div  class="gallery-card__image">
                         <img style="height:192px" src="{{asset('images/edu_program/13.jpg')}}" alt="#"></div>
-                       <div class="gallery-card__content"><a class="img-popup" href="{{asset('images/edu_program/13.jpg')}}">
+                       <div class="gallery-card__content"><a class="glightbox img-popup" href="{{asset('images/edu_program/13.jpg')}}">
                         <i class="fab fa-instagram"></i></a></div>
                     </div>
                     <!--]--><!---->
@@ -394,7 +407,7 @@
                     <div class="gallery-card">
                        <div class="gallery-card__image">
                         <img style="height:192px" src="{{asset('images/med_program/img8.jpg')}}" alt="#"></div>
-                       <div class="gallery-card__content"><a class="img-popup" href="{{asset('images/med_program/img8.jpg')}}"><i class="fab fa-instagram"></i></a></div>
+                       <div class="gallery-card__content"><a class="glightbox img-popup" href="{{asset('images/med_program/img8.jpg')}}"><i class="fab fa-instagram"></i></a></div>
                     </div>
                     <!--]--><!---->
                  </div>
@@ -403,7 +416,7 @@
                     <div class="gallery-card">
                        <div class="gallery-card__image">
                         <img style="height:192px" src="{{asset('images/health_program/4.jpg')}}" alt="#"></div>
-                       <div class="gallery-card__content"><a class="img-popup" href="{{asset('images/health_program/4.jpg')}}"><i class="fab fa-instagram" c673d43c></i></a></div>
+                       <div class="gallery-card__content"><a class="glightbox img-popup" href="{{asset('images/health_program/4.jpg')}}"><i class="fab fa-instagram" c673d43c></i></a></div>
                     </div>
                     <!--]--><!---->
                  </div>
@@ -413,7 +426,7 @@
                         <div class="gallery-card__image" >
                             <img style="height:192px" src="{{asset('images/edu_program/2.jpg')}}" alt="#" >
                         </div>
-                       <div class="gallery-card__content" ><a class="img-popup" href="{{asset('images/edu_program/2.jpg')}}" ><i class="fab fa-instagram" c673d43c></i></a></div>
+                       <div class="gallery-card__content" ><a class="glightbox img-popup" href="{{asset('images/edu_program/2.jpg')}}" ><i class="fab fa-instagram" c673d43c></i></a></div>
                     </div>
                     <!--]--><!---->
                  </div>
@@ -424,40 +437,50 @@
         </div>
      </section>
 
-     <section class="sec-pad-top sec-pad-bottom popular-causes">
-      <div class="container">
-         <div class="sec-title">
-            <p class="sec-title__tagline">Our</p>
-            <h2 class="sec-title__title">Our Board of Trustees</h2>
-         </div>
-         <div class="donations-carousel">
-            <div class="row">
-                <div class="col-md-6 mb-5"  aria-hidden="true" tabindex="-1">
-                    <div class="donations-card" style="--accent-color: #df5311;">
-                        <div class="donations-card__image">
-                            <img style="height: 500px" src="{{asset('images/trustee1.jpg')}}" alt="Donation Image"/>
-                            <div class="donations-card__category">
-                                <a href="#">Chairman</a>
-                            </div>
-                        </div>
+     <section class="sec-pad-top sec-pad-bottom">
+        <div class="container">
+           <div class="sec-title text-center">
+              <p class="sec-title__tagline">Meet Our</p>
+              <h2 class="sec-title__title">Board of Trustees</h2>
+           </div>
+           <div class="row gutter-y-30">
+              <div class="col-md-6 col-lg-4">
+                 <div class="volunteers-card">
+                    <h3 style="font-size: 20px;" class="volunteers-card__title">
+                        <a href="#">His Royal Majesty, King (Dr) Michael Ateke Tom, JP  </a>
+                    </h3>
+                    <p class="volunteers-card__designation">Chairman</p>
+                    <div class="volunteers-card__image"><img src="{{asset('images/king1.png')}}" alt=""></div>
+                    <div class="volunteers-card__social">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
                     </div>
-                </div>
-
-                <div class="col-md-6 mb-5"  aria-hidden="true" tabindex="-1">
-                    <div class="donations-card" style="--accent-color: #df5311;">
-                        <div class="donations-card__image">
-                            <img style="height: 500px" src="{{asset('images/trustee2.jpg')}}" alt="Donation Image">
-                            <div class="donations-card__category">
-                                <a href="#">Leader</a>
-                            </div>
-                        </div>
+                 </div>
+              </div>
+              <div class="col-md-6 col-lg-4">
+                 <div class="volunteers-card">
+                    <h3 style="font-size: 20px;"  class="volunteers-card__title"><a href="#">Luke Okoro</a></h3>
+                    <p class="volunteers-card__designation">Member</p>
+                    <div class="volunteers-card__image">
+                        <img style="height: 353px;" src="{{asset('images/trustee1.png')}}" alt="">
                     </div>
-                </div>
-
-            </div>
-
-         </div>
-      </div>
+                    <div class="volunteers-card__social"><a href="#"><i class="fab fa-twitter"></i></a><a href="#"><i class="fab fa-facebook"></i></a><a href="#"><i class="fab fa-pinterest"></i></a><a href="#"><i class="fab fa-instagram"></i></a></div>
+                 </div>
+              </div>
+              <div class="col-md-6 col-lg-4">
+                 <div class="volunteers-card">
+                    <h3 style="font-size: 20px;"  class="volunteers-card__title"><a href="#">Martins Victor</a></h3>
+                    <p class="volunteers-card__designation">Member</p>
+                    <div class="volunteers-card__image">
+                        <img src="{{asset('images/trustee2.png')}}" alt="">
+                    </div>
+                    <div class="volunteers-card__social"><a href="#"><i class="fab fa-twitter"></i></a><a href="#"><i class="fab fa-facebook"></i></a><a href="#"><i class="fab fa-pinterest"></i></a><a href="#"><i class="fab fa-instagram"></i></a></div>
+                 </div>
+              </div>
+           </div>
+        </div>
      </section>
 
      <section class="sec-pad-top sec-pad-bottom video-one" >
@@ -468,14 +491,15 @@
                     <div class="video-one__content"  >
                        <a href="#" class="video-one__btn video-popup" ><i class="fa fa-play" ></i><span class="video-one__btn__arrow" ></span></a>
                        <h3 class="video-one__title count-box" >
-                        Support us in reaching out <br >
+                        Become a Member <br>
+                        Help us to :
                           <span class="d-inline-flex" >
 
                              <div class="countup-wrap" >
                                 <!--[--><!--]--><span></span><!--[--><!--]-->
                              </div>
                           </span>
-                          to the less privileged
+
                        </h3>
                        <ul class="list-unstyled video-one__list" >
                           <!--[-->
@@ -486,31 +510,8 @@
                        </ul>
                     </div>
                  </div>
-                 <div class="col-md-12 col-lg-6" >
-                    <form class="contact-one__form video-one__form"  >
-                       <div class="row" >
-                          <div class="col-md-6" >
-                             <input type="text" placeholder="Your name" value="" ><!---->
-                          </div>
-                          <div class="col-md-6" >
-                             <input type="text" placeholder="Your phone" value="" ><!---->
-                          </div>
-                          <div class="col-md-12" >
-                             <input type="email" placeholder="Email address" value="" ><!---->
-                          </div>
-                          <div class="col-md-12" >
-                             <input type="text" placeholder="Location" value="" ><!---->
-                          </div>
-                          <div class="col-md-12" >
-                             <textarea placeholder="Message" ></textarea>
-                             <!---->
-                          </div>
-                          <div class="col-md-12" >
-                             <button type="submit" class="thm-btn contact-one__btn" ><span >Continue now</span></button><!---->
-                          </div>
-                          <!---->
-                       </div>
-                    </form>
+                 <div id="membership-form" class="col-md-12 col-lg-6" >
+                    @livewire('membership-form')
                  </div>
               </div>
            </div>
@@ -647,7 +648,7 @@
                         </div>
                         <div class="blog-card__content">
                             <h3 class="blog-card__title">
-                                <a href="/blog-details" class="">KAT-FOUNDATION Green I Initiative (Planting One Million Trees by 2025)</a>
+                                <a href="/blog-details" class="">Green I Initiative (Planting One Million Trees by 2025)</a>
                             </h3>
                             <a href="/blog-details" class="blog-card__links">
                                 <i class="fa fa-angle-double-right"></i> Read More
@@ -670,7 +671,9 @@
                     <p class="sec-title__tagline" >Wordwide non-profit charity</p>
                     <h2 class="sec-title__title" >Give a helping hand for <br >needy People</h2>
                  </div>
-                 <form class="mc-form newsletter-one__form" ><input type="email" value="" placeholder="Your email" ><button type="submit" class="newsletter-one__form__btn" >Subscribe</button></form>
+
+                    <button type="submit" class="newsletter-one__form__btn" >Donate</button>
+
                  <div class="mc-response" >
                     <!---->
                  </div>
