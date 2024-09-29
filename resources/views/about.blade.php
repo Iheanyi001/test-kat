@@ -194,8 +194,8 @@
               </div>
               <div class="col-md-6 col-lg-4">
                  <div class="volunteers-card">
-                    <h3 class="volunteers-card__title"><a href="#">Luke Okoro</a></h3>
-                    <p class="volunteers-card__designation">Member</p>
+                    <h3 class="volunteers-card__title"><a href="#">Madu I. E.</a></h3>
+                    <p class="volunteers-card__designation">Director General (DG)</p>
                     <div class="volunteers-card__image">
                         <img style="height: 353px;" src="{{asset('images/trustee1.png')}}" alt="">
                     </div>
@@ -204,7 +204,7 @@
               </div>
               <div class="col-md-6 col-lg-4">
                  <div class="volunteers-card">
-                    <h3 class="volunteers-card__title"><a href="#">Martins Victor</a></h3>
+                    <h3 class="volunteers-card__title"><a href="#">Chief Amangi Sunday</a></h3>
                     <p class="volunteers-card__designation">Member</p>
                     <div class="volunteers-card__image">
                         <img src="{{asset('images/trustee2.png')}}" alt="">
