@@ -13,6 +13,14 @@
             .volunteers-card__title{
                 font-size: 20px;
             }
+
+
+        .swiper-slide img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        }
+
     </style>
     @endpush
     <section class="page-header" style="background-image: url({{asset('_nuxt/page-header-1-1.BAD7W5SW.jpg')}}); padding-bottom: 5.375rem; padding-top: 5.375rem;">
@@ -53,11 +61,21 @@
                  </div>
               </div>
 
-              <div class="col-lg-6">
-                <div class="about-one__images wow fadeInLeft" data-wow-duration="1500ms" style="visibility: visible; animation-duration: 1500ms; animation-name: fadeInLeft;">
-                   <img src="{{asset('images/homepage/hero1.jpg')}}" alt="">
-                   <img style="width: 275px; height: 275px; right:-40px;" src="{{asset('images/med_program/img4.jpg')}}" alt=""></div>
-             </div>
+                <div class="col-lg-6" style="overflow: hidden">
+                    <div class="pre-amnesty" style="width:100%">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="{{asset('images/anm/pre-amnesty1.jpg')}}" alt="Image 1">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="{{asset('images/anm/pre-amnesty2.jpg')}}" alt="Image 2">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="{{asset('images/anm/pre-amnesty3.jpg')}}" alt="Image 3">
+                            </div>
+                        </div>
+                    </div>
+                </div>
            </div>
            <div class="row">
                 <div class="col-lg-6">
@@ -176,7 +194,7 @@
         <div class="container">
            <div class="sec-title text-center">
               <p class="sec-title__tagline">Meet Our</p>
-              <h2 class="sec-title__title">board of Trustees</h2>
+              <h2 class="sec-title__title">Board of Trustees</h2>
            </div>
            <div class="row gutter-y-30">
               <div class="col-md-6 col-lg-4">
@@ -199,12 +217,18 @@
                     <div class="volunteers-card__image">
                         <img style="height: 353px;" src="{{asset('images/trustee1.png')}}" alt="">
                     </div>
-                    <div class="volunteers-card__social"><a href="#"><i class="fab fa-twitter"></i></a><a href="#"><i class="fab fa-facebook"></i></a><a href="#"><i class="fab fa-pinterest"></i></a><a href="#"><i class="fab fa-instagram"></i></a></div>
+                    <div class="volunteers-card__social"><a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
                  </div>
               </div>
               <div class="col-md-6 col-lg-4">
                  <div class="volunteers-card">
-                    <h3 class="volunteers-card__title"><a href="#">Chief Amangi Sunday</a></h3>
+                    <h3 class="volunteers-card__title">
+                        <a href="#">Chief Amangi Sunday</a>
+                    </h3>
                     <p class="volunteers-card__designation">Member</p>
                     <div class="volunteers-card__image">
                         <img src="{{asset('images/trustee2.png')}}" alt="">
@@ -215,7 +239,6 @@
            </div>
         </div>
      </section>
-
 
      <section class="sec-pad-top sec-pad-bottom video-one" >
         <div class="container" >
@@ -251,4 +274,21 @@
            </div>
         </div>
      </section>
+
+     @push('scripts')
+     <script>
+        var preAmnesty = new Swiper('.pre-amnesty', {
+          direction: 'horizontal',
+          slidesPerView: 1,
+          loop: true, // Loop the slides
+          autoplay: {
+            delay: 3000, // 3-second delay between slides
+            disableOnInteraction: false, // Keep autoplay running after interaction
+          },
+          pagination: {
+            el: '.swiper-pagination',
+            },
+        });
+      </script>
+      @endpush
 </x-guest-layout>

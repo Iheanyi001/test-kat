@@ -164,42 +164,44 @@
                            </ul>
                         </div>
                      </div>
-                     <div class="col-sm-12 col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-duration="1500ms" data-wow-delay="300ms" data-v-637754db>
-                        <div class="site-footer__widget" data-v-637754db>
-                           <h3 class="site-footer__widget__title" data-v-637754db>Contact</h3>
-                           <ul class="list-unstyled site-footer__widget__contact" data-v-637754db>
-                              <li data-v-637754db><i class="fa fa-envelope-open" data-v-637754db></i><a href="mailto:needhelp@company.com" data-v-637754db>needhelp@company.com</a></li>
-                              <li data-v-637754db><i class="fa fa-mobile" data-v-637754db></i><a href="tel:(+234) 8037447114" data-v-637754db>(+234) 8037447114</a></li>
+                     <div class="col-sm-12 col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-duration="1500ms" data-wow-delay="300ms">
+                        <div class="site-footer__widget">
+                           <h3 class="site-footer__widget__title">Contact</h3>
+                           <ul class="list-unstyled site-footer__widget__contact">
+                              <li><i class="fa fa-envelope-open"></i><a href="mailto:info@kingateketomfoundation.org">info@kingateketomfoundation.org</a></li>
+                              <li><i class="fa fa-mobile"></i><a href="tel:(+234) 8037447114">(+234) 8037447114</a></li>
                            </ul>
                         </div>
                      </div>
-                     <div class="col-sm-12 col-md-6 col-lg-6 col-xl-2 wow fadeInUp" data-wow-duration="1500ms" data-wow-delay="400ms" data-v-637754db>
-                        <div class="site-footer__widget site-footer__widget__cta" data-v-637754db>
-                           <h3 class="site-footer__widget__title" data-v-637754db><span data-v-637754db>Raise Money and help them</span></h3>
-                           <a href="donations-details.html" class="thm-btn thm-btn--two thm-btn--light" data-v-637754db><span data-v-637754db>Donate Now</span><i class="fa fa-heart" data-v-637754db></i></a>
+                     <div class="col-sm-12 col-md-6 col-lg-6 col-xl-2 wow fadeInUp" data-wow-duration="1500ms" data-wow-delay="400ms">
+                        <div class="site-footer__widget site-footer__widget__cta">
+                           <h3 class="site-footer__widget__title"><span>Raise Money and help them</span></h3>
+                           <a href="donations-details.html" class="thm-btn thm-btn--two thm-btn--light"><span>Donate Now</span><i class="fa fa-heart" data-v-637754db></i></a>
                         </div>
                      </div>
                   </div>
                </div>
             </div>
-            <div class="site-footer__bottom" data-v-637754db>
-               <div class="container" data-v-637754db>
-                  <div class="site-footer__bottom__inner" data-v-637754db>
-                     <p class="site-footer__bottom__text" data-v-637754db> © Copyright
-                        <span class="dynamic-year" data-v-637754db>2024</span> KAT Foundation
+
+            <div class="site-footer__bottom">
+               <div class="container">
+                  <div class="site-footer__bottom__inner">
+                     <p class="site-footer__bottom__text"> © Copyright
+                        <span class="dynamic-year">2024</span> KAT Foundation
                     </p>
-                    <p class="site-footer__bottom__text" data-v-637754db> Made by
-                        <a href="https://bytebouwers.com.ng" target="_blank" class="dynamic-year" data-v-637754db>ByteBouwers</a>
+                    <p class="site-footer__bottom__text"> Made by
+                        <a href="https://bytebouwers.com.ng" target="_blank" class="dynamic-year">ByteBouwers</a>
                     </p>
-                     <div class="site-footer__social" data-v-637754db>
-                        <a href="#" data-v-637754db><i class="fab fa-twitter" data-v-637754db></i></a>
-                        <a href="#" data-v-637754db><i class="fab fa-facebook" data-v-637754db></i></a>
-                        <a href="#" data-v-637754db><i class="fab fa-pinterest" data-v-637754db></i></a>
-                        <a href="#" data-v-637754db><i class="fab fa-instagram" data-v-637754db></i></a>
+                     <div class="site-footer__social">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
                     </div>
                   </div>
                </div>
             </div>
+
             <!---->
          </footer>
          <div id="mobile-nav__wrapper" class="mobile-nav__wrapper" >
