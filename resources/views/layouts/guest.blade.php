@@ -70,10 +70,7 @@
                                         <a href="/"><i class="fab fa-pinterest"></i></a>
                                         <a href="https://www.instagram.com/katfoundation2024/"><i class="fab fa-instagram"></i></a>
                                     </div>
-                                    <!--<ul class="list-unstyled topbar__links">
-                                       <li><a href="#">Login</a></li>
-                                       <li><a href="#">Register</a></li>
-                                    </ul>-->
+
                                  </div>
                               </div>
                            </div>
@@ -84,32 +81,32 @@
                                  <ul class="main-menu__list">
                                     <!--[-->
                                     <li class="dropdown">
-                                       <a aria-current="page" href="{{route('home')}}" class="router-link-active router-link-exact-active">Home</a>
+                                       <a aria-current="page" href="{{route('home')}}" class="{{request()->routeIs('home') ? 'router-link-active router-link-exact-active': ''}}">Home</a>
                                     </li>
 
                                     <li class="dropdown">
-                                        <a href="{{route('about')}}" class="">About Us</a>
+                                        <a href="{{route('about')}}" class="{{request()->routeIs('about') ? 'router-link-active router-link-exact-active': ''}}">About Us</a>
                                      </li>
 
                                     <li class="dropdown">
-                                       <a href="{{route('events')}}" class="">Events</a>
+                                       <a href="{{route('events')}}" class="{{request()->routeIs('events') ? 'router-link-active router-link-exact-active': ''}}">Events</a>
                                     </li>
 
                                     <li class="dropdown">
-                                        <a href="donations.html" class="">Donations</a>
+                                        <a href="{{route('donate')}}" class="{{request()->routeIs('donate') ? 'router-link-active router-link-exact-active': ''}}">Donations</a>
                                      </li>
 
                                     <li class="">
-                                       <a href="contact.html" class="">Contact</a><!---->
+                                       <a href="{{route('contact')}}" class="{{request()->routeIs('contact') ? 'router-link-active router-link-exact-active': ''}}">Contact</a><!---->
                                     </li>
                                     <!--]-->
                                  </ul>
                                  <div class="main-menu__right">
                                     <div class="main-menu__cta">
                                        <div class="main-menu__cta__icon"><i class="paroti-icon-volunteer"></i></div>
-                                       <div class="main-menu__cta__text"><span>Join us now</span><a href="contact.html" class="">Become a Volunteer</a></div>
+                                       <div class="main-menu__cta__text"><span>Join us now</span><a href="{{route('contact')}}" class="">Become a Volunteer</a></div>
                                     </div>
-                                    <a href="donations-details.html" class="thm-btn thm-btn--two">
+                                    <a href="{{route('donate')}}" class="thm-btn thm-btn--two">
                                         <span>Donate Now</span>
                                         <i class="fa fa-heart"></i>
                                     </a>
@@ -128,7 +125,7 @@
                         </header>
             {{ $slot }}
 
-        <footer class="site-footer" style="background-image:url(_nuxt/footer-bg-1-1.DQ6J-Ydo.jpg);" data-v-637754db>
+        <footer class="site-footer" style="background-image:url({{asset('_nuxt/footer-bg-1-1.DQ6J-Ydo.jpg')}});" data-v-637754db>
             <div class="site-footer__top" data-v-637754db>
                <div class="container" data-v-637754db>
                   <div class="row" data-v-637754db>
@@ -145,22 +142,22 @@
                            <h3 class="site-footer__widget__title" data-v-637754db>Links</h3>
                            <ul class="list-unstyled site-footer__widget__links" data-v-637754db>
                               <li data-v-637754db><a href="{{route('home')}}" class="" data-v-637754db>Home</a></li>
-                              <li data-v-637754db><a href="about.html" class="" data-v-637754db>About us</a></li>
-                              <li data-v-637754db><a href="contact.html" class="" data-v-637754db>Contact Us</a></li>
-                              <li data-v-637754db><a href="donation.html" class="" data-v-637754db>Donations</a></li>
+                              <li data-v-637754db><a href="{{route('about')}}" class="" data-v-637754db>About us</a></li>
+                              <li data-v-637754db><a href="{{route('contact')}}" class="" data-v-637754db>Contact Us</a></li>
+                              <li data-v-637754db><a href="{{route('donate')}}" class="" data-v-637754db>Donate</a></li>
                               <li data-v-637754db><a href="{{route('events')}}" class="" data-v-637754db>Events</a></li>
                            </ul>
                         </div>
                      </div>
                      <div class="col-sm-12 col-md-6 col-lg-6 col-xl-2 wow fadeInUp" data-wow-duration="1500ms" data-wow-delay="200ms" data-v-637754db>
                         <div class="non-profile-container site-footer__widget" data-v-637754db>
-                           <h3 class="site-footer__widget__title" data-v-637754db>Non Profit</h3>
+                           <h3 class="site-footer__widget__title" data-v-637754db>Support Outreach</h3>
                            <ul class="list-unstyled site-footer__widget__links" data-v-637754db>
-                              <li data-v-637754db><a href="donations-details.html" class="" data-v-637754db>Differently abled kids</a></li>
-                              <li data-v-637754db><a href="donations-details.html" class="" data-v-637754db>Help child cancer</a></li>
-                              <li data-v-637754db><a href="donations-details.html" class="" data-v-637754db>Clean pure water</a></li>
-                              <li data-v-637754db><a href="donations-details.html" class="" data-v-637754db>Give them education</a></li>
-                              <li data-v-637754db><a href="donations-details.html" class="" data-v-637754db>Start a fundraising</a></li>
+                              <li data-v-637754db><a href="{{route('support.medical')}}" class="" data-v-637754db>Medical</a></li>
+                              <li data-v-637754db><a href="{{route('support.education')}}" class="" data-v-637754db>Educational</a></li>
+                              <li data-v-637754db><a href="{{route('support.poverty')}}" class="" data-v-637754db>Poverty Alleviation</a></li>
+                              <li data-v-637754db><a href="{{route('support.youth')}}" class="" data-v-637754db>Youth Empowerment</a></li>
+                              <li data-v-637754db><a href="{{route('support.environment')}}" class="" data-v-637754db>Environmental Sustainability</a></li>
                            </ul>
                         </div>
                      </div>
@@ -176,7 +173,7 @@
                      <div class="col-sm-12 col-md-6 col-lg-6 col-xl-2 wow fadeInUp" data-wow-duration="1500ms" data-wow-delay="400ms">
                         <div class="site-footer__widget site-footer__widget__cta">
                            <h3 class="site-footer__widget__title"><span>Raise Money and help them</span></h3>
-                           <a href="donations-details.html" class="thm-btn thm-btn--two thm-btn--light"><span>Donate Now</span><i class="fa fa-heart" data-v-637754db></i></a>
+                           <a href="{{route('donate')}}" class="thm-btn thm-btn--two thm-btn--light"><span>Donate Now</span><i class="fa fa-heart" data-v-637754db></i></a>
                         </div>
                      </div>
                   </div>
@@ -194,9 +191,9 @@
                     </p>
                      <div class="site-footer__social">
                         <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.facebook.com/kat.foundation1?mibextid=ZbWKwL"><i class="fab fa-facebook"></i></a>
                         <a href="#"><i class="fab fa-pinterest"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.instagram.com/katfoundation2024/"><i class="fab fa-instagram"></i></a>
                     </div>
                   </div>
                </div>
@@ -214,15 +211,15 @@
                   <ul class="mobile-menu__list" >
                      <!--[-->
                      <li class="menu-item-has-children" >
-                        <a href="#" >Home </a>
+                        <a href="{{route('home')}}" >Home </a>
 
                      </li>
                      <li class="menu-item-has-children" >
-                        <a href="#" >About </a>
+                        <a href="{{route('about')}}" >About </a>
 
                      </li>
                      <li class="menu-item-has-children" >
-                        <a href="#" >Donations </a>
+                        <a href="{{route('donate')}}" >Donate </a>
 
                      </li>
                      <li class="menu-item-has-children" >
@@ -230,7 +227,7 @@
                      </li>
 
                      <li class="" >
-                        <a href="#" >
+                        <a href="{{route('contact')}}" >
                            Contact <!---->
                         </a>
                         <!---->

@@ -8,7 +8,7 @@ Route::get('/', function () {
 })->name('home');
 
 Route::get('/executive-brief', function () {
-    return view('brief');
+    return view('about');
 })->name('brief');
 
 Route::get('/about-us', function () {
@@ -19,9 +19,48 @@ Route::get('/events', function () {
     return view('events');
 })->name('events');
 
-Route::get('/test', function () {
-    return view('test');
-});
+Route::get('/donate', function () {
+    return view('donate');
+})->name('donate');
 
-// Frontend Routes
-/*Route::get('/{slug}', [PageController::class, 'show'])->name('page.show');*/
+Route::get('/support/medical-outreach', function(){
+    return view('support.medical');
+})->name('support.medical');
+Route::get('/support/youth-empowerment-and-skill-acquisition', function(){
+    return view('support.youth');
+})->name('support.youth');
+Route::get('/support/environmental-support', function(){
+    return view('support.environment');
+})->name('support.environment');
+
+Route::get('/support/poverty-alleviation', function(){
+    return view('support.poverty');
+})->name('support.poverty');
+
+Route::get('/support/community-development', function(){
+    return view('support.community');
+})->name('support.community');
+
+
+Route::get('/support/educational-support ', function(){
+    return view('support.education');
+})->name('support.education');
+
+
+Route::get('/events/upcoming/health', function(){
+    return view('events.upcoming.health');
+})->name('events.upcoming.health');
+
+Route::get('/events/upcoming/school', function(){
+    return view('events.upcoming.school');
+})->name('events.upcoming.school');
+
+
+Route::get('/events/upcoming/green', function(){
+    return view('events.upcoming.green');
+})->name('events.upcoming.green');
+
+
+Route::get('/contact-us', function () {
+    return view('contact');
+})->name('contact');

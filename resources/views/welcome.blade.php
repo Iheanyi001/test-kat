@@ -183,59 +183,23 @@
                     <div  aria-hidden="true" tabindex="-1">
                         <div class="donations-card" style="--accent-color: #df5311;">
                             <div class="donations-card__image">
-                            <img style="height: 252px" src="{{asset('images/edu_program/1.jpg')}}" alt="Donation Image">
-                            <div class="donations-card__category">
-                                <a href="#">Education</a>
-                            </div>
-                        </div>
-                        <div class="donations-card__content">
-                                <h3 class="donations-card__title">
-                                    <a style="font-size: 16px" href="/donations-details" class="">Provided key learning resources, boosting student morale and engagement.</a>
-                                </h3>
-                                <p class="donations-card__text">The King Ateke Tom Foundation organized an educational outreach in Rivers State, distributing textbooks, notebooks, writing tools, and backpacks to over 500 students.</p>
-                                <div class="bar">
-                                    <div class="bar-inner count-bar" style="width:21%; background-color:#df5311">
-                                        <div class="count-text d-flex">
-                                            <div class="countup-wrap">
-                                                <span>21</span>
-                                        </div>%
-                                </div>
-                            </div>
-                        </div>
-                        <div class="donations-card__amount">
-                            <p><span>500</span> People reached</p><p>
-                            <span>200,000</span> Goal</p>
-                        </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div  aria-hidden="true" tabindex="-1">
-                        <div class="donations-card" style="--accent-color: #df5311;">
-                            <div class="donations-card__image">
                             <img style="height: 252px" src="{{asset('images/med_program/img3.jpg')}}" alt="Donation Image">
                             <div class="donations-card__category">
-                                <a href="#">Medical</a>
+                                <a href="{{route('support.medical')}}">Medical Outreach </a>
                             </div>
                         </div>
                         <div class="donations-card__content">
-                                <h3 class="donations-card__title">
-                                    <a style="font-size: 16px" href="/donations-details" class="">Provided essential healthcare services, improving community well-being and access to medical support.</a>
+                                <h3 class="donations-card__title" >
+                                    <a style="font-size: 16px" href="{{route('support.medical')}}" class="">Delivered crucial healthcare services, enhancing community health and well-being.</a>
                                 </h3>
-                                <p class="donations-card__text">The King Ateke Tom Foundation carried out a medical outreach in Rivers State, providing free healthcare services, medications, and health education to over 5000 residents, enhancing access to essential medical care.</p>
-                                <div class="bar">
-                                    <div class="bar-inner count-bar"  style="width:25%; background-color:#350bf0">
-                                        <div class="count-text d-flex">
-                                            <div class="countup-wrap">
-                                                <span>25</span>
-                                        </div>%
+                                <p style="border:none!important" class="donations-card__text">The King Ateke Tom Foundation carried out a medical outreach in Rivers State, providing free healthcare services, medications, and health education to over 5000 residents, enhancing access to essential medical care.</p>
+
+                                <div class="about-two__btns mt-10" style="margin:0!important">
+                                    <a href="{{route('support.medical')}}" class="thm-btn about-two__btn" style="border-radius:40px">
+                                        <span>Continue Reading</span>
+                                    </a>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="donations-card__amount">
-                            <p><span>5,000</span>People Reached</p><p>
-                            <span>300,000</span> Goal</p>
-                        </div>
+
                             </div>
                         </div>
                     </div>
@@ -243,29 +207,92 @@
                     <div  aria-hidden="true" tabindex="-1">
                         <div class="donations-card" style="--accent-color: #df5311;">
                             <div class="donations-card__image">
-                            <img style="height: 252px" src="{{asset('images/health_program/1.jpg')}}" alt="Donation Image">
+                            <img style="height: 252px" src="{{asset('images/youth/1.png')}}" alt="Donation Image">
                             <div class="donations-card__category">
-                                <a href="#">Housing</a>
+                                <a href="{{route('support.youth')}}">Youth Empowerment and Skill Acquisition</a>
                             </div>
                         </div>
                         <div class="donations-card__content">
                                 <h3 class="donations-card__title">
-                                    <a style="font-size: 16px" href="/donations-details" class="">Provided vital housing support, enhancing living conditions and stability for the community.</a>
+                                    <a style="font-size: 16px" href="{{route('support.youth')}}" class="">Equipped youths with skills and resources for sustainable livelihood and economic growth</a>
                                 </h3>
-                                <p class="donations-card__text">The King Ateke Tom Foundation conducted a housing outreach in Rivers State, offering shelter assistance and providing essential housing materials to over 50 families.</p>
-                                <div class="bar">
-                                    <div class="bar-inner count-bar"  style="width:10%; background-color:aqua">
-                                        <div class="count-text d-flex">
-                                            <div class="countup-wrap">
-                                                <span>10</span>
-                                        </div>%
+                                <p style="border: none!important" class="donations-card__text">The King Ateke Tom Foundation organized a youth empowerment and skill acquisition program in Rivers State, training over 3000 young individuals in various trades and entrepreneurial skills, fostering self-reliance and economic development.</p>
+
+                        <div class="about-two__btns mt-10" style="margin:0!important">
+                            <a href="{{route('support.youth')}}" class="thm-btn about-two__btn" style="border-radius:40px">
+                                <span>Continue Reading</span>
+                            </a>
+                        </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div  aria-hidden="true" tabindex="-1">
+                        <div class="donations-card" style="--accent-color: #df5311;">
+                            <div class="donations-card__image">
+                            <img style="height: 252px" src="{{asset('images/poverty/2.png')}}" alt="Donation Image">
+                            <div class="donations-card__category">
+                                <a href="{{route('support.poverty')}}">Poverty Alleviation</a>
+                            </div>
+                        </div>
+                        <div class="donations-card__content">
+                                <h3 class="donations-card__title">
+                                    <a style="font-size: 16px" href="{{route('support.poverty')}}" class="">Reduced economic hardships by providing resources and opportunities for community members.</a>
+                                </h3>
+                                <p style="border:none!important" class="donations-card__text">The King Ateke Tom Foundation launched a poverty alleviation initiative, distributing essential supplies and creating job opportunities for over 2000 families, significantly improving their standard of living and economic security.</p>
+
+                                <div class="about-two__btns mt-10" style="margin:0!important">
+                                    <a href="{{route('support.poverty')}}" class="thm-btn about-two__btn" style="border-radius:40px">
+                                        <span>Continue Reading</span>
+                                    </a>
                                 </div>
                             </div>
                         </div>
-                        <div class="donations-card__amount">
-                            <p><span>50</span>People reached</p><p>
-                            <span>30,000</span> Goal</p>
+                    </div>
+
+                    <div  aria-hidden="true" tabindex="-1">
+                        <div class="donations-card" style="--accent-color: #df5311;">
+                            <div class="donations-card__image">
+                            <img style="height: 252px" src="{{asset('images/edu_program/1.jpg')}}" alt="Donation Image">
+                            <div class="donations-card__category">
+                                <a href="{{route('support.education')}}">Education</a>
+                            </div>
                         </div>
+                        <div class="donations-card__content">
+                                <h3 class="donations-card__title">
+                                    <a style="font-size: 16px" href="{{route('support.education')}}" class="">Promoted education by offering resources to students, ensuring a brighter future for the youth.</a>
+                                </h3>
+                                <p style="border:none!important" class="donations-card__text">The King Ateke Tom Foundation provided educational materials, scholarships, and learning aids to over 4000 students across Rivers State, enhancing access to quality education and empowering the next generation of leaders.</p>
+
+                                <div class="about-two__btns mt-10" style="margin:0!important">
+                                    <a href="{{route('support.education')}}" class="thm-btn about-two__btn" style="border-radius:40px">
+                                        <span>Continue Reading</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div  aria-hidden="true" tabindex="-1">
+                        <div class="donations-card" style="--accent-color: #df5311;">
+                            <div class="donations-card__image">
+                            <img style="height: 252px" src="{{asset('images/edu_program/1.jpg')}}" alt="Donation Image">
+                            <div class="donations-card__category">
+                                <a href="{{route('support.environment')}}">Environmental Sustainability</a>
+                            </div>
+                        </div>
+                        <div class="donations-card__content">
+                                <h3 class="donations-card__title">
+                                    <a style="font-size: 16px" href="{{route('support.environment')}}" class="">Promoted environmental conservation and sustainability through community-driven efforts.</a>
+                                </h3>
+                                <p style="border: :none!important" class="donations-card__text">The King Ateke Tom Foundation led environmental sustainability campaigns, engaging communities in tree planting, waste management, and climate action initiatives, fostering a cleaner and greener environment for over 68 residents.</p>
+
+                                <div class="about-two__btns mt-10" style="margin:0!important">
+                                    <a href="{{route('support.environment')}}" class="thm-btn about-two__btn" style="border-radius:40px">
+                                        <span>Continue Reading</span>
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -305,7 +332,7 @@
                              <!--[-->
                              <div class="testimonials-card" 84118bfd>
                                 <i class="paroti-icon-quote testimonials-card__icon" 84118bfd></i>
-                                <img src="{{asset('_nuxt/testimonials-item-bg-1-1.BkqDuzSL.png')}}" class="testimonials-card__bg" alt="Background for Mike Hardson" 84118bfd>
+                                <img src="{{asset('_nuxt/testimonials-item-bg-1-1.BkqDuzSL.png')}}" class="testimonials-card__bg" alt="" 84118bfd>
                                 <p class="testimonials-card__text" 84118bfd>The King AtekeTom Foundation has been a lifeline for our community. Their dedication to improving lives through education and healthcare is truly inspiring. We are grateful for their unwavering support.</p>
                                 <div class="testimonials-card__meta clearfix" 84118bfd>
                                    <img style="width:91px; height:91px" src="{{asset('images/test1.png')}}" alt="Community Leader" 84118bfd>
@@ -315,11 +342,12 @@
                              </div>
                              <!--]--><!---->
                           </div>
+
                           <div class="swiper-slide">
                              <!--[-->
                              <div class="testimonials-card" 84118bfd>
                                 <i class="paroti-icon-quote testimonials-card__icon" 84118bfd></i>
-                                <img src="{{asset('_nuxt/testimonials-item-bg-1-1.BkqDuzSL.png')}}" class="testimonials-card__bg" alt="Background for Mike Hardson" 84118bfd>
+                                <img src="{{asset('_nuxt/testimonials-item-bg-1-1.BkqDuzSL.png')}}" class="testimonials-card__bg" alt="" 84118bfd>
                                 <p class="testimonials-card__text" 84118bfd>The skills training and job opportunities provided by the foundation have transformed my life. I now have a stable career and can support my family with dignity. Thank you for making a difference.</p>
                                 <div class="testimonials-card__meta clearfix" 84118bfd>
                                    <img style="width:91px; height:91px" src="{{asset('images/test3.png')}}" alt="Okochiri" 84118bfd>
@@ -329,19 +357,38 @@
                              </div>
                              <!--]--><!---->
                           </div>
-                          <!--<div class="swiper-slide">
+
+                          <div class="swiper-slide">
 
                              <div class="testimonials-card" 84118bfd>
-                                <i class="paroti-icon-quote testimonials-card__icon" 84118bfd></i><img src="_nuxt/testimonials-item-bg-1-1.BkqDuzSL.png" class="testimonials-card__bg" alt="Background for Mike Hardson" 84118bfd>
-                                <p class="testimonials-card__text" 84118bfd>Proin a lacus arcu nullam id dui eu orci maximus. Cras at auctor lectus, vel pretium tellus. Class aptent sociosqu ad litora torquent per conubia nostra.</p>
+                                <i class="paroti-icon-quote testimonials-card__icon" 84118bfd></i><img src="_nuxt/testimonials-item-bg-1-1.BkqDuzSL.png" class="testimonials-card__bg" alt="" 84118bfd>
+                                <p class="testimonials-card__text" 84118bfd>The King Ateke Tom Foundation has truly transformed my child's education. Through their support, my daughter now has access to quality learning materials and after-school programs. Her confidence and performance have greatly improved, and we are forever grateful.</p>
                                 <div class="testimonials-card__meta clearfix" 84118bfd>
-                                   <img src="_nuxt/testi-1-1.7TljiI0u.png" alt="Mike Hardson" 84118bfd>
-                                   <h3 class="testimonials-card__name" 84118bfd>Mike Hardson</h3>
-                                   <p class="testimonials-card__designation" 84118bfd>Customer</p>
+                                   <img src="{{asset('images/test4.png')}}" alt="Mrs. Grace Uche" 84118bfd>
+                                   <h3 class="testimonials-card__name" 84118bfd>Mrs. Grace Uche</h3>
+                                   <p class="testimonials-card__designation" 84118bfd>Parent</p>
                                 </div>
                              </div>
 
-                          </div>-->
+                          </div>
+
+                          <div class="swiper-slide">
+
+                            <div class="testimonials-card" 84118bfd>
+                               <i class="paroti-icon-quote testimonials-card__icon" 84118bfd></i><img src="_nuxt/testimonials-item-bg-1-1.BkqDuzSL.png" class="testimonials-card__bg" alt="" 84118bfd>
+                               <p class="testimonials-card__text" 84118bfd>The Foundation's focus on skill acquisition and education has been a blessing to our community. My son participated in the ICT training and is now able to apply those skills in his school projects. It’s amazing to see how much he's grown</p>
+                               <div class="testimonials-card__meta clearfix" 84118bfd>
+                                  <img src="_nuxt/testi-1-1.7TljiI0u.png" alt="Mr. Adewale Sanni" 84118bfd>
+                                  <h3 class="testimonials-card__name" 84118bfd>Mr. Adewale Sanni
+                                </h3>
+                                  <p class="testimonials-card__designation" 84118bfd>Parent</p>
+                               </div>
+                            </div>
+
+                         </div>
+
+
+
                           <!--]--><!--[--><!--]-->
                        </div>
                        <!----><!----><!----><!--[--><!--]-->
@@ -609,9 +656,9 @@
                         </div>
                         <div class="blog-card__content">
                             <h3 class="blog-card__title">
-                                <a href="/blog-details" class="">Regular Health Care Programs and Health Education</a>
+                                <a href="{{route('events.upcoming.health')}}" class="">Regular Health Care Programs and Health Education</a>
                             </h3>
-                            <a href="/blog-details" class="blog-card__links">
+                            <a href="{{route('events.upcoming.health')}}" class="blog-card__links">
                                 <i class="fa fa-angle-double-right"></i> Read More
                             </a>
                         </div>
@@ -626,10 +673,10 @@
                         </div>
                         <div class="blog-card__content">
                             <h3 class="blog-card__title">
-                                <a href="/blog-details" class="">Continuing School Support Programs
+                                <a href="{{route('events.upcoming.school')}}" class="">Continuing School Support Programs
                                 </a>
                             </h3>
-                            <a href="/blog-details" class="blog-card__links">
+                            <a href="{{route('events.upcoming.school')}}" class="blog-card__links">
                                 <i class="fa fa-angle-double-right"></i> Read More
                             </a>
                         </div>
@@ -645,9 +692,9 @@
                         </div>
                         <div class="blog-card__content">
                             <h3 class="blog-card__title">
-                                <a href="/blog-details" class="">Green I Initiative (Planting One Million Trees by 2025)</a>
+                                <a href="{{route('events.upcoming.green')}}" class="">Green I Initiative (Planting One Million Trees by 2025)</a>
                             </h3>
-                            <a href="/blog-details" class="blog-card__links">
+                            <a href="{{route('events.upcoming.green')}}" class="blog-card__links">
                                 <i class="fa fa-angle-double-right"></i> Read More
                             </a>
                         </div>
@@ -669,7 +716,11 @@
                     <h2 class="sec-title__title" >Give a helping hand for <br >needy People</h2>
                  </div>
 
-                    <button type="submit" class="newsletter-one__form__btn" >Donate</button>
+                 <div class="about-two__btns mt-10" style="margin:0!important">
+                    <a href="{{route('donate')}}" class="thm-btn about-two__btn" style="border-radius:40px">
+                        <span>Continue Reading</span>
+                    </a>
+                </div>
 
                  <div class="mc-response" >
                     <!---->
@@ -685,7 +736,7 @@
             container: '.my-slider',
             items: 3,
             slideBy: 'page',
-            autoplay: true,
+            autoplay: false,
             controls:false,
             autoplayButton:false,
             responsive: {
@@ -709,7 +760,7 @@
             container: '.my-slider2',
             items: 3,
             slideBy: 'page',
-            autoplay: true,
+            autoplay: false,
             controls:false,
             autoplayButton:false,
             responsive: {

@@ -43,7 +43,7 @@
                  <div class="about-one__content" style="padding-left:0">
                     <div class="sec-title">
                        <p class="sec-title__tagline">More about the KAT Foundation</p>
-                       <h2 class="sec-title__title" style="font-size: 2rem;">History of the King Ateke Tom Foundation:<br/> From Struggle to Service</h2>
+                       <h2 class="sec-title__title" style="font-size: 1.5rem;">History of the King Ateke Tom Foundation:<br/> From Struggle to Service</h2>
                     </div>
                     <!--<ul class="list-unstyled about-one__list">
                        <li><i class="fa fa-check-circle"></i> Donate to Poors </li>
@@ -51,17 +51,16 @@
                     </ul>-->
                     <div class="about-one__tagline">Pre-Amnesty </div>
                     <p class="about-one__text">
-                        The King Ateke Tom Foundation emerged from the turbulent history of the Niger Delta, a region rich in resources but burdened by neglect and environmental degradation. Its founder, HRH King Ateke Michael Tom, from Okrika, Rivers State, rose as a leader during the struggle for resource control and justice for the Niger Delta communities.
+
                     </p>
                     <p>
-                        King Ateke initially led the Niger Delta Vigilante (NDV), a militia group fighting for the rights of the region’s people. The NDV’s activities brought international attention to the Niger Delta's plight, advocating for resource control, environmental protection, and development.
-                    </p>
-
+                     The King Ateke Tom Foundation was born out of the complex and challenging history of the Niger Delta, a region rich in natural resources but plagued by decades of neglect, environmental degradation, and socio-economic strife. The foundation’s roots are deeply intertwined with the personal journey of its founder, King Ateke Michael Tom, who rose from the crucible of these struggles to become a prominent leader in the region.
+                     </p>
 
                  </div>
               </div>
 
-                <div class="col-lg-6" style="overflow: hidden">
+                <div class="col-lg-6" style="overflow: hidden; height: 300px">
                     <div class="pre-amnesty" style="width:100%">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
@@ -73,6 +72,24 @@
                             <div class="swiper-slide">
                                 <img src="{{asset('images/anm/pre-amnesty3.jpg')}}" alt="Image 3">
                             </div>
+
+                            <div class="swiper-slide">
+                              <img src="{{asset('images/anm/pre-amnesty4.jpg')}}" alt="Image 3">
+                          </div>
+
+
+                       <div class="swiper-slide">
+                        <img src="{{asset('images/anm/pre-amnesty5.jpg')}}" alt="Image 5">
+                    </div>
+
+                    <div class="swiper-slide">
+                     <img src="{{asset('images/anm/pre-amnesty6.jpeg')}}" alt="Image 6">
+                 </div>
+                 <div class="swiper-slide">
+                  <img src="{{asset('images/anm/pre-amnesty7.jpg')}}" alt="Image 7">
+              </div>
+
+
                         </div>
                     </div>
                 </div>
@@ -80,35 +97,142 @@
            <div class="row">
                 <div class="col-lg-6">
                     <p>
-                        In 2009, King Ateke embraced the Nigerian government's amnesty program under President Umaru Yar'Adua, marking a turning point from armed conflict to peacebuilding. His leadership led to the disarmament of his forces in exchange for amnesty, job training, and reintegration support.
+                     HRH King Ateke Michael Tom hails from Okrika, a town in the Rivers State of Nigeria. He became prominent in the early 2000s due to his involvement in the struggle for control over the resources in the Niger Delta. He left behind his roles as a fisherman, poultry farmer, and sand digger to fight for justice.
                     </p>
 
-                    <div class="about-one__tagline">Post-Amnesty: Empowering Communities, Building Futures</div>
-                    <p>
-                        Today, the King Ateke Tom Foundation focuses on improving lives in the Niger Delta through:
+                   <p>
+                     King Ateke Tom initially gained notoriety as a leader of the Niger Delta Vigilante (NDV), a militia group formed to protect the interests of the Niger Delta communities amidst the turmoil caused by the oil industry and government neglect. The NDV, under his leadership, was instrumental in drawing national and international attention to the plight of the region. Their activities were focused on fighting for resource control, environmental protection, and greater development in the Niger Delta region.
+                   </p>
+
+                   <p>
+                     During an interview, Ateke mooted the idea of peace if his boys could be granted amnesty, provided skilled training and afforded jobs for them to live normal life.
+                     Under Ateke Tom's leadership, the NDV engaged in armed struggles, including attacking oil installations, taking hostages, and clashing with both government forces and rival militias. These activities were part of the broader Niger Delta insurgency, where militants sought to claim a greater share of oil revenues for the impoverished region.
+                     He faced relentless attacks and government hostility, yet his resolve never wavered. His mission was clear: to secure amnesty for his men and provide them with the skills and jobs needed to build a new life.
+
                     </p>
-                    <ul>
-                        <li><strong>Education:</strong> Scholarships and school infrastructure.</li>
-                        <li><strong>Healthcare:</strong> Medical outreach and improved healthcare facilities.</li>
-                        <li><strong>Youth Empowerment:</strong> Skills acquisition and vocational training.</li>
-                        <li><strong>Community Development:</strong> Infrastructure projects improving quality of life.</li>
-                        <li><strong>Peacebuilding:</strong> Promoting conflict resolution and stability.</li>
-                    </ul>
+                    <p>
+                     Recognizing that true progress required peace and constructive engagement, King Ateke Tom embraced the Nigerian government's amnesty program in 2009 offered by President Umaru Yar'Adua. An unconditional pardon and cash payments to rebels who agree to lay down their arms. This pivotal decision marked the beginning of a transformation to one of peacebuilding and community development.
+                    </p>
                 </div>
-                <div class="col-lg-6">
-                    <div class="about-one__tagline">Future Vision</div>
 
+                <div class="col-lg-6">
                     <p>
-                        The foundation aims to expand its impact by scaling educational programs, enhancing healthcare services, broadening youth training efforts, and deepening peacebuilding activities. The King Ateke Tom Foundation is committed to transforming the Niger Delta into a prosperous, peaceful region.
+                     When President Umaru Musa Yar'Adua saw Ateke Tom in the state house admist the amnesty resolutions, A highly elated Yar'Adua described Atekes visit as his 49th Independence gift, saying that <strong>"this independent anniversary gift you have given me, I cherish very much because of all those things I cherished, one of them is peace and security in the Niger Delta, it has always pained me to see our brother and sister  Nigerians taking up arms against fellow Nigerians and are ready to live in the creeks under very difficult situations and conditions because of such issues that agitated their minds. But by the grace of God and the kind heart and the goodwill you have brought to this amnesty programme, this is coming to an end"</strong>
+
                     </p>
-                    <div class="about-one__meta clearfix">
-                       <img style="width:91px" src="{{asset('images/king1.png')}}" alt="">
-                       <h3 class="about-one__name">His Royal Majesty, King (Dr) Michael Ateke Tom, JP </h3>
-                       <h5>Amayanabo of Okochiri Kingdom</h5>
-                       <p class="about-one__designation">Chairman, Board of Trustees, King AtekeTom Foundation</p>
-                    </div>
+                    <p>
+                     Our minds would draw back to the following interview of King Ateke.
+                     <strong><i>What else would you want the government to do for you and your boys so that there could be peace, that is in, addition to the compensation for what was damaged during the attack on your base? Let the government find jobs for the boys and involve those who wish to learn any trade in skill acquisition, so that they can live their lives peacefully.
+                     Are you saying that if the government comes and says bring the list of the names of your boys so that they could be employed, as a sort of amnesty, will that end the problem between you and government? Of course there will no more trouble; we would not feel concerned about anything anymore. Because we are not robbers, we are loyal citizens going about our lives quietly.</i></strong>
+
+                    </p>
+                    <p><strong><i>
+                     If the problem between you and the government is settled, how would you want to live your life? Already I am a quiet man, I made peace and resolved to keep the peace, I have been living quietly, I have nothing against anyone. But our things must be returned or compensated for and we will remain quiet.</i></strong>
+                    </p>
+                    <p>The King Ateke Tom Foundation emerged from this transformation as a beacon of hope, dedicated to the sustainable development of the Niger Delta and beyond.</p>
                 </div>
            </div>
+
+           <br><br>
+           <div class="row">
+
+            <div class="col-lg-6">
+               <div class="about-one__content" style="padding-left:0">
+                  <div class="sec-title">
+
+                     <h2 class="sec-title__title" style="font-size: 1.5rem;">Post Amnesty: Empowering Communities, Building Futures</h2>
+                  </div>
+
+                  <!--<div class="about-one__tagline">Pre-Amnesty </div>-->
+                  <p class="about-one__text">
+
+                  </p>
+                  <p>
+                     Today, the King Ateke Tom Foundation stands as a powerful force for good in the Niger Delta. Our mission is to uplift the lives of the people in this region by addressing critical issues such as poverty, lack of education, poor healthcare, and youth unemployment. Through a variety of initiatives, the foundation works tirelessly to improve the socio-economic conditions of the communities it serves.
+
+                     <div class="about-one__tagline">Education:</div>
+                   </p>
+                     We believe in the power of education to change lives.
+                     The foundation provides scholarships, supplies educational materials, and supports the construction and renovation of schools. Our goal is to ensure that every child in the Niger Delta has access to quality education.
+
+               </div>
+            </div>
+
+              <div class="col-lg-6" style="overflow: hidden; height: 300px">
+                  <div class="post-amnesty" style="width:100%">
+                      <div class="swiper-wrapper">
+                          <div class="swiper-slide">
+                              <img src="{{asset('images/anm/post-amnesty1.jpg')}}" alt="Image 1">
+                          </div>
+                          <div class="swiper-slide">
+                              <img src="{{asset('images/anm/post-amnesty2.jpg')}}" alt="Image 2">
+                          </div>
+
+                          <div class="swiper-slide">
+                              <img src="{{asset('images/anm/post-amnesty3.jpg')}}" alt="Image 3">
+                          </div>
+
+                          <div class="swiper-slide">
+                           <img src="{{asset('images/anm/post-amnesty4.jpg')}}" alt="Image 4">
+                       </div>
+
+                       <div class="swiper-slide">
+                        <img src="{{asset('images/anm/post-amnesty5.jpg')}}" alt="Image 5">
+                    </div>
+
+                    <div class="swiper-slide">
+                     <img src="{{asset('images/anm/post-amnesty6.jpg')}}" alt="Image 6">
+                 </div>
+
+                      </div>
+                  </div>
+              </div>
+         </div>
+
+         <div class="row">
+              <div class="col-lg-6">
+                  <p>
+                     <div class="about-one__tagline">Healthcare:</div> The foundation organizes medical outreach programs, providing free healthcare services to underserved communities. We also invest in improving local healthcare infrastructure to ensure long-term benefits for the region’s residents.
+                  </p>
+
+                 <p>
+                  <div class="about-one__tagline">Youth Empowerment:</div> the potential of the youth as the future of the region, the foundation offers skills acquisition programs and vocational training. These initiatives are designed to reduce unemployment and provide young people with the tools they need to build successful, self-sufficient lives.
+                 </p>
+
+                 <p>
+                  <div class="about-one__tagline">Community Development:</div>
+                  The foundation is actively involved in various infrastructure projects, from constructing roads to providing clean water supplies. These projects are vital in improving the overall quality of life and fostering sustainable development in the region.
+                  Peacebuilding: As a freedom fighter, King Ateke Tom is deeply committed to promoting peace in the Niger Delta and beyond. The foundation works closely with local communities, government agencies, and other stakeholders to mediate conflicts and support initiatives that ensure lasting peace.
+
+                  </p>
+                  <p>
+                   Recognizing that true progress required peace and constructive engagement, King Ateke Tom embraced the Nigerian government's amnesty program in 2009 offered by President Umaru Yar'Adua. An unconditional pardon and cash payments to rebels who agree to lay down their arms. This pivotal decision marked the beginning of a transformation to one of peacebuilding and community development.
+                  </p>
+              </div>
+
+              <div class="col-lg-6">
+               <br><br>
+               <div class="about-one__tagline">Our Future: A Vision of Prosperity and Peace</div>
+                  <p>
+                     Looking ahead, the King Ateke Tom Foundation is committed to expanding its reach and impact. We envision a future where the Niger Delta is no longer defined by its struggles but by its triumphs—a region where communities are thriving, children are educated, and peace is the norm rather than the exception.
+                  </p>
+                  <p>
+                     <div class="about-one__tagline">Our goals for the future include:</div>
+                     Scaling Up Educational Programs: Expanding our scholarship and school support programs to reach more children across the Niger Delta and beyond.
+                     Enhancing Healthcare Initiatives: Increasing the frequency and scope of our medical outreach programs and further improving healthcare infrastructure.
+                     Broadening Youth Empowerment Efforts: Developing more comprehensive vocational training programs and creating partnerships with businesses to provide employment opportunities for trained youth.
+
+                  </p>
+                  <p>
+                     Strengthening Community Development Projects: Undertaking larger-scale infrastructure projects that will have a lasting impact on the region’s development.
+                     Deepening Peacebuilding Activities: Continuing our work in conflict resolution and peace promotion, with the aim of fostering a stable and prosperous environment with and beyond shores.
+
+                  </p>
+                  <p>
+                     The King Ateke Tom Foundation is more than just an organization, it is a movement for change, a symbol of hope, and a testament to the resilience and potential of the people. As we move forward, we invite everyone, partners, donors, and well-wishers to join us on this journey toward a brighter future for all.
+                  </p>
+              </div>
+         </div>
         </div>
      </section>
 
@@ -282,7 +406,20 @@
           slidesPerView: 1,
           loop: true, // Loop the slides
           autoplay: {
-            delay: 3000, // 3-second delay between slides
+            delay: 2000, // 3-second delay between slides
+            disableOnInteraction: false, // Keep autoplay running after interaction
+          },
+          pagination: {
+            el: '.swiper-pagination',
+            },
+        });
+
+        var preAmnesty = new Swiper('.post-amnesty', {
+          direction: 'horizontal',
+          slidesPerView: 1,
+          loop: true, // Loop the slides
+          autoplay: {
+            delay: 2000, // 3-second delay between slides
             disableOnInteraction: false, // Keep autoplay running after interaction
           },
           pagination: {
