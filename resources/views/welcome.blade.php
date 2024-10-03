@@ -63,7 +63,7 @@
                     <img src="{{asset('images/king1.png')}}" class="wow fadeInLeft" data-wow-duration="1500ms" alt="" >
                     <div style="position: absolute;left:0;bottom: 0;height: auto;width:100%;background-color: #df5311;padding: 5px; padding-top:10px">
                         <h1 style="text-transform: uppercase; font-size: 14px; color: white;font-weight: bold;">
-                            His Royal Majesty, King (Dr) Michael Ateke Tom, JP
+                            His Royal Majesty, King (Dr) Ateke Michael Tom, JP
                         </h1>
                     </div>
                     <div style="display:none" class="about-two__image__caption" >
