@@ -364,7 +364,7 @@
                                 <i class="paroti-icon-quote testimonials-card__icon" 84118bfd></i><img src="_nuxt/testimonials-item-bg-1-1.BkqDuzSL.png" class="testimonials-card__bg" alt="" 84118bfd>
                                 <p class="testimonials-card__text" 84118bfd>The King Ateke Tom Foundation has truly transformed my child's education. Through their support, my daughter now has access to quality learning materials and after-school programs. Her confidence and performance have greatly improved, and we are forever grateful.</p>
                                 <div class="testimonials-card__meta clearfix" 84118bfd>
-                                   <img src="{{asset('images/test4.png')}}" alt="Mrs. Grace Uche" 84118bfd>
+                                   <img style="width:91px; height:91px" src="{{asset('images/test4.png')}}" alt="Mrs. Grace Uche" 84118bfd>
                                    <h3 class="testimonials-card__name" 84118bfd>Mrs. Grace Uche</h3>
                                    <p class="testimonials-card__designation" 84118bfd>Parent</p>
                                 </div>
@@ -378,7 +378,7 @@
                                <i class="paroti-icon-quote testimonials-card__icon" 84118bfd></i><img src="_nuxt/testimonials-item-bg-1-1.BkqDuzSL.png" class="testimonials-card__bg" alt="" 84118bfd>
                                <p class="testimonials-card__text" 84118bfd>The Foundation's focus on skill acquisition and education has been a blessing to our community. My son participated in the ICT training and is now able to apply those skills in his school projects. It’s amazing to see how much he's grown</p>
                                <div class="testimonials-card__meta clearfix" 84118bfd>
-                                  <img src="_nuxt/testi-1-1.7TljiI0u.png" alt="Mr. Adewale Sanni" 84118bfd>
+                                  <img style="width:91px; height:91px" src="{{asset('images/test2.png')}}" alt="Mr. Adewale Sanni" 84118bfd>
                                   <h3 class="testimonials-card__name" 84118bfd>Mr. Adewale Sanni
                                 </h3>
                                   <p class="testimonials-card__designation" 84118bfd>Parent</p>
