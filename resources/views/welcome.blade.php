@@ -736,7 +736,7 @@
             container: '.my-slider',
             items: 3,
             slideBy: 'page',
-            autoplay: false,
+            autoplay: true,
             controls:false,
             autoplayButton:false,
             responsive: {
@@ -760,7 +760,7 @@
             container: '.my-slider2',
             items: 3,
             slideBy: 'page',
-            autoplay: false,
+            autoplay: true,
             controls:false,
             autoplayButton:false,
             responsive: {
