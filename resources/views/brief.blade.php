@@ -65,18 +65,18 @@
              <div class="col-lg-8">
                 <div class="events-details__content">
                    <h3 class="events-card__title">FROM DESK OF THE CHAIRMAN BOARD OF TRUSTEES, KING ATEKETOM FOUNDATION</h3>
-                   <p>The King AtekeTom Foundation stands as a beacon of hope and resilience, born from a journey of transformation and selflessness. Our foundation was established to uplift the downtrodden, empower the disenfranchised, and create opportunities where none existed before. This mission is deeply rooted in our history, a history of overcoming adversity and striving for a better future for all.</p>
+                   <p style="text-align: justify;">The King AtekeTom Foundation stands as a beacon of hope and resilience, born from a journey of transformation and selflessness. Our foundation was established to uplift the downtrodden, empower the disenfranchised, and create opportunities where none existed before. This mission is deeply rooted in our history, a history of overcoming adversity and striving for a better future for all.</p>
 
-                   <p>As a foundation, we believe that every life has value, and it is our duty to ensure that no one is left behind. Our work focuses on providing tangible support whether through skill acquisition, medical outreach, poverty alleviation, or youth empowerment to those who need it most. We understand that the challenges our people face are vast, but so too is our resolve to address them.</p>
+                   <p style="text-align: justify;">As a foundation, we believe that every life has value, and it is our duty to ensure that no one is left behind. Our work focuses on providing tangible support whether through skill acquisition, medical outreach, poverty alleviation, or youth empowerment to those who need it most. We understand that the challenges our people face are vast, but so too is our resolve to address them.</p>
 
 
-                   <p>Our vision extends beyond immediate relief; we aim to build a society where every individual, regardless of background, has the chance to thrive. We are committed to fostering an environment where education, opportunity, and dignity are accessible to all. Through our initiatives, we strive to restore hope, instill pride, and create lasting change in the Niger Delta and beyond.</p>
+                   <p style="text-align: justify;">Our vision extends beyond immediate relief; we aim to build a society where every individual, regardless of background, has the chance to thrive. We are committed to fostering an environment where education, opportunity, and dignity are accessible to all. Through our initiatives, we strive to restore hope, instill pride, and create lasting change in the Niger Delta and beyond.</p>
 
-                   <p>
+                   <p style="text-align: justify;">
                     This is not just charity; it is a movement for social transformation. It is a call to action for all who believe in the potential of our people. The King AtekeTom Foundation is dedicated to turning despair into opportunity, darkness into light, and isolation into community.
                    </p>
 
-                   <p>
+                   <p style="text-align: justify;">
                     As we look to the future, we are guided by the principle that true leadership is measured by the positive impact we have on the lives of others. We invite you to join us on this journey, as we work together to build a better, more inclusive society for generations to come.
                    </p>
 
