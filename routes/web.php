@@ -8,7 +8,7 @@ Route::get('/', function () {
 })->name('home');
 
 Route::get('/executive-brief', function () {
-    return view('about');
+    return view('brief');
 })->name('brief');
 
 Route::get('/about-us', function () {

@@ -161,17 +161,7 @@
            </div>
         </section>
      </div>-->
-     <section class="sec-pad-top sec-pad-bottom cta-one" >
-        <div class="cta-one__bg" style="background-image:url(_nuxt/cta-bg-1-1.DoIUieof.jpg);" ></div>
-        <div class="cta-one__shape" style="background-image:url(_nuxt/cta-s-1-1.CL3pWFka.png);" ></div>
-        <div class="container text-center" >
-           <div class="sec-title" >
-              <p class="sec-title__tagline" >We’re here to support poor people</p>
-              <h2 class="sec-title__title" > Fundraising for the people and <br ><span >causes</span> you care about </h2>
-           </div>
-           <a href="donations.html" class="thm-btn cta-one__btn" ><span >Start donating them</span></a>
-        </div>
-     </section>
+
      <section class="sec-pad-top sec-pad-bottom popular-causes">
         <div class="container">
            <div class="sec-title">
