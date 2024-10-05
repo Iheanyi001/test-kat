@@ -11,7 +11,7 @@
                     <div class="container">
                        <h2 class="slider-one__title"> Building <span>Brighter</span> <br> Futures with Compassion </h2>
                        <p class="slider-one__text">Together, we can uplift communities and change lives.</p>
-                       <div class="slider-one__btns"><a href="about.html" class="thm-btn slider-one__btn"><span>Discover More</span></a></div>
+                       <div class="slider-one__btns"><a href="{{route('donate')}}" class="thm-btn slider-one__btn"><span>Get involved</span></a></div>
                     </div>
                  </div>
                  <!--]--><!---->
@@ -23,7 +23,7 @@
                     <div class="container">
                        <h2 class="slider-one__title">Empowering Lives:<br> Education, Care, Shelter</h2>
                        <p class="slider-one__text">Providing essential support for those in need.</p>
-                       <div class="slider-one__btns"><a href="about.html" class="thm-btn slider-one__btn"><span>Discover More</span></a></div>
+                       <div class="slider-one__btns"><a href="{{route('donate')}}" class="thm-btn slider-one__btn"><span>Get involved</span></a></div>
                     </div>
                  </div>
                  <!--]--><!---->
@@ -36,7 +36,7 @@
                        <h2 class="slider-one__title">Join Us:<br/> Make a Lasting Impact</h2>
                        <p class="slider-one__text">Be a part of a movement dedicated to sustainable change.</p>
                        <div class="slider-one__btns">
-                        <a href="#membership-form" class="thm-btn slider-one__btn"><span>Join Us</span></a></div>
+                        <a href="{{route('donate')}}" class="thm-btn slider-one__btn"><span>Get involved</span></a></div>
                     </div>
                  </div>
                  <!--]--><!---->
@@ -516,40 +516,6 @@
         </div>
      </section>
 
-     <section class="sec-pad-top sec-pad-bottom video-one" >
-        <div class="container" >
-           <div class="video-one__inner" style="background-image:url(_nuxt/video-inner-bg-1-1.DDfA7HnK.jpg);" >
-              <div class="row gutter-y-60" >
-                 <div class="col-md-12 col-lg-6" >
-                    <div class="video-one__content"  >
-                       <a href="#" class="video-one__btn video-popup" ><i class="fa fa-play" ></i><span class="video-one__btn__arrow" ></span></a>
-                       <h3 class="video-one__title count-box" >
-                        Become a Member <br>
-                        Help us to :
-                          <span class="d-inline-flex" >
-
-                             <div class="countup-wrap" >
-                                <span></span>
-                             </div>
-                          </span>
-
-                       </h3>
-                       <ul class="list-unstyled video-one__list" >
-
-                          <li ><i class="fa fa-check-circle" ></i> Provide essential healthcare.</li>
-                          <li ><i class="fa fa-check-circle" ></i> Empower through education</li>
-                          <li ><i class="fa fa-check-circle" ></i> Ensure safe housing.</li>
-                          <!--]-->
-                       </ul>
-                    </div>
-                 </div>
-                 <div id="membership-form" class="col-md-12 col-lg-6" >
-                    @livewire('membership-form')
-                 </div>
-              </div>
-           </div>
-        </div>
-     </section>
 
      <section style="display: none!important" class="sec-pad-top sec-pad-bottom sponsor-carousel undefined" >
         <div class="container" >
@@ -585,7 +551,7 @@
         <div class="funfact-two__shape" ></div>
         <div class="container" >
            <div class="sec-title text-center" >
-              <p class="sec-title__tagline" >Let’s support us to help them</p>
+              <p class="sec-title__tagline" >Partner with us to empower them</p>
               <h2 class="sec-title__title" >Join your hands with us for <br >a better life and future</h2>
            </div>
            <ul class="list-unstyled funfact-two__list" >
@@ -702,13 +668,14 @@
            <div class="row" >
               <div class="col-lg-7" >
                  <div class="sec-title" >
-                    <p class="sec-title__tagline" >Wordwide non-profit charity</p>
-                    <h2 class="sec-title__title" >Give a helping hand for <br >needy People</h2>
+                    <p class="sec-title__tagline" >Partner with Us for Lasting Impact</p>
+                    <h2 class="sec-title__title" >Together, We Can Transform Lives <br >and Build Stronger Communities</h2>
                  </div>
 
                  <div class="about-two__btns mt-10" style="margin:0!important">
-                    <a href="{{route('donate')}}" class="thm-btn about-two__btn" style="border-radius:40px">
-                        <span>Continue Reading</span>
+                    <a href="{{route('donate')}}" class="thm-btn about-two__btn"
+                    style="background-color:var(--paroti-black,#144047); border-radius:40px">
+                        <span>Join Us</span>
                     </a>
                 </div>
 

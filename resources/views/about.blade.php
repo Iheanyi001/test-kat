@@ -21,6 +21,12 @@
         object-fit: cover;
         }
 
+        .my-img{
+            height: 430px!important; /* Replace with your desired height */
+            width: auto!important; /* Replace with your desired width */
+            object-fit: cover; /* Scale image to cover entire height */
+        }
+
     </style>
     @endpush
     <section class="page-header" style="background-image: url({{asset('_nuxt/page-header-1-1.BAD7W5SW.jpg')}}); padding-bottom: 5.375rem; padding-top: 5.375rem;">
@@ -33,7 +39,7 @@
         </div>
     </section>
 
-    <section class="sec-pad-top sec-pad-bottom about-one">
+    <section class="my-container sec-pad-top sec-pad-bottom about-one">
         <div class="about-one__shape-1 float-bob-y"><img src="{{asset('_nuxt/about-1-1.BzIvtQQI.png')}}" alt=""></div>
         <div class="about-one__shape-2 float-bob-x"><img src="{{asset('_nuxt/about-1-2.D_jGqYhl.png')}}" alt=""></div>
         <div class="container">
@@ -60,33 +66,33 @@
                  </div>
               </div>
 
-                <div class="col-lg-6" style="overflow: hidden; height: 300px">
+                <div class="col-lg-6" style="overflow: hidden; height: 408px">
                     <div class="pre-amnesty" style="width:100%">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
-                                <img src="{{asset('images/anm/pre-amnesty1.jpg')}}" alt="Image 1">
+                                <img class="my-img" src="{{asset('images/anm/pre-amnesty1.jpg')}}" alt="Image 1">
                             </div>
-                            <div class="swiper-slide">
-                                <img src="{{asset('images/anm/pre-amnesty2.jpg')}}" alt="Image 2">
+                            <div  class="swiper-slide">
+                                <img class="my-img" src="{{asset('images/anm/pre-amnesty2.jpg')}}" alt="Image 2">
                             </div>
-                            <div class="swiper-slide">
-                                <img src="{{asset('images/anm/pre-amnesty3.jpg')}}" alt="Image 3">
+                            <div  class="swiper-slide">
+                                <img class="my-img" src="{{asset('images/anm/pre-amnesty3.jpg')}}" alt="Image 3">
                             </div>
 
-                            <div class="swiper-slide">
-                              <img src="{{asset('images/anm/pre-amnesty4.jpg')}}" alt="Image 3">
+                            <div  class="swiper-slide">
+                              <img class="my-img" src="{{asset('images/anm/pre-amnesty4.jpg')}}" alt="Image 3">
                           </div>
 
 
                        <div class="swiper-slide">
-                        <img src="{{asset('images/anm/pre-amnesty5.jpg')}}" alt="Image 5">
+                        <img class="my-img" src="{{asset('images/anm/pre-amnesty5.jpg')}}" alt="Image 5">
                     </div>
 
                     <div class="swiper-slide">
-                     <img src="{{asset('images/anm/pre-amnesty6.jpeg')}}" alt="Image 6">
+                     <img class="my-img" src="{{asset('images/anm/pre-amnesty6.jpeg')}}" alt="Image 6">
                  </div>
                  <div class="swiper-slide">
-                  <img src="{{asset('images/anm/pre-amnesty7.jpg')}}" alt="Image 7">
+                  <img class="my-img" src="{{asset('images/anm/pre-amnesty7.jpg')}}" alt="Image 7">
               </div>
 
 
@@ -158,31 +164,55 @@
                </div>
             </div>
 
-              <div class="col-lg-6" style="overflow: hidden; height: 300px">
+              <div class="col-lg-6" style="overflow: hidden; height: 408px">
                   <div class="post-amnesty" style="width:100%">
                       <div class="swiper-wrapper">
                           <div class="swiper-slide">
-                              <img src="{{asset('images/anm/post-amnesty1.jpg')}}" alt="Image 1">
+                              <img class="my-img" src="{{asset('images/anm/post-amnesty1.jpg')}}" alt="Image 1">
                           </div>
                           <div class="swiper-slide">
-                              <img src="{{asset('images/anm/post-amnesty2.jpg')}}" alt="Image 2">
-                          </div>
-
-                          <div class="swiper-slide">
-                              <img src="{{asset('images/anm/post-amnesty3.jpg')}}" alt="Image 3">
+                              <img class="my-img" src="{{asset('images/anm/post-amnesty2.jpg')}}" alt="Image 2">
                           </div>
 
                           <div class="swiper-slide">
-                           <img src="{{asset('images/anm/post-amnesty4.jpg')}}" alt="Image 4">
+                              <img class="my-img" src="{{asset('images/anm/post-amnesty3.jpg')}}" alt="Image 3">
+                          </div>
+
+                          <div class="swiper-slide">
+                           <img class="my-img" src="{{asset('images/anm/post-amnesty4.jpg')}}" alt="Image 4">
                        </div>
 
                        <div class="swiper-slide">
-                        <img src="{{asset('images/anm/post-amnesty5.jpg')}}" alt="Image 5">
+                        <img class="my-img" src="{{asset('images/anm/post-amnesty5.jpg')}}" alt="Image 5">
+                        </div>
+
+                    <div class="swiper-slide">
+                     <img class="my-img" src="{{asset('images/anm/post-amnesty6.jpg')}}" alt="Image 6">
                     </div>
 
                     <div class="swiper-slide">
-                     <img src="{{asset('images/anm/post-amnesty6.jpg')}}" alt="Image 6">
-                 </div>
+                        <img class="my-img" src="{{asset('images/anm/post-amnesty8.jpg')}}" alt="Image 6">
+                    </div>
+
+                    <div class="swiper-slide">
+                        <img class="my-img" src="{{asset('images/anm/post-amnesty9.jpg')}}" alt="Image 6">
+                    </div>
+
+                    <div class="swiper-slide">
+                        <img class="my-img" src="{{asset('images/anm/post-amnesty10.jpg')}}" alt="Image 6">
+                    </div>
+
+                    <div class="swiper-slide">
+                        <img class="my-img" src="{{asset('images/anm/post-amnesty11.jpg')}}" alt="Image 6">
+                    </div>
+
+                    <div class="swiper-slide">
+                        <img class="my-img" src="{{asset('images/anm/post-amnesty12.jpg')}}" alt="Image 6">
+                    </div>
+
+                    <div class="swiper-slide">
+                        <img class="my-img" src="{{asset('images/anm/post-amnesty13.jpg')}}" alt="Image 6">
+                    </div>
 
                       </div>
                   </div>
@@ -317,84 +347,84 @@
      <section class="sec-pad-top sec-pad-bottom">
         <div class="container">
            <div class="sec-title text-center">
-              <p class="sec-title__tagline">Meet Our</p>
-              <h2 class="sec-title__title">Board of Trustees</h2>
+
+              <h2 class="sec-title__title">What we do</h2>
            </div>
-           <div class="row gutter-y-30">
-              <div class="col-md-6 col-lg-4">
-                 <div class="volunteers-card">
-                    <h3 class="volunteers-card__title"><a href="#">His Royal Majesty, King (Dr) Michael Ateke Tom, JP  </a></h3>
-                    <p class="volunteers-card__designation">Chairman</p>
-                    <div class="volunteers-card__image"><img src="{{asset('images/king1.png')}}" alt=""></div>
-                    <div class="volunteers-card__social">
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-facebook"></i></a>
-                        <a href="#"><i class="fab fa-pinterest"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
+           <div class="row gutter-y-30 mt-4">
+
+            <ul class="list-unstyled funfact-two__list" >
+                <li class="funfact-two__list__item" >
+                   <a style="color:var(--paroti-black,#144047)" href="{{route('support.medical')}}">
+                   <div class="funfact-two__list__icon" >
+                    <img style="width:70px" src="{{asset('images/med-icon.png')}}" alt="Medical Outreach" >
+                </div>
+                   <h3 class="funfact-two__list__count count-box" >
+                      <div class="countup-wrap" >
+                         <span></span>
+                      </div>
+                   </h3>
+                   <p class="funfact-two__list__text" >Medical Outreach</p>
+                   </a>
+                </li>
+
+                <li class="funfact-two__list__item" style="--accent-color:#8139e7;" >
+                    <a style="color:var(--paroti-black,#144047)" href="{{route('support.environment')}}">
+                    <div class="funfact-two__list__icon" >
+                        <img style="width:70px" src="{{asset('images/env-icon.png')}}" alt="Environment" >
                     </div>
-                 </div>
-              </div>
-              <div class="col-md-6 col-lg-4">
-                 <div class="volunteers-card">
-                    <h3 class="volunteers-card__title"><a href="#">Madu I. E.</a></h3>
-                    <p class="volunteers-card__designation">Director General (DG)</p>
-                    <div class="volunteers-card__image">
-                        <img style="height: 353px;" src="{{asset('images/trustee1.png')}}" alt="">
-                    </div>
-                    <div class="volunteers-card__social"><a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-facebook"></i></a>
-                        <a href="#"><i class="fab fa-pinterest"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                    </div>
-                 </div>
-              </div>
-              <div class="col-md-6 col-lg-4">
-                 <div class="volunteers-card">
-                    <h3 class="volunteers-card__title">
-                        <a href="#">Chief Amangi Sunday</a>
+                    <h3 class="funfact-two__list__count count-box" >
+                       <div class="countup-wrap" >
+                          <!--[--><!--]--><span></span><!--[--><!--]-->
+                       </div>
                     </h3>
-                    <p class="volunteers-card__designation">Member</p>
-                    <div class="volunteers-card__image">
-                        <img src="{{asset('images/trustee2.png')}}" alt="">
+                    <p class="funfact-two__list__text" >Environmental Sustainability</p>
+                    </a>
+                 </li>
+
+                <li class="funfact-two__list__item" >
+                    <a style="color:var(--paroti-black,#144047)" href="{{route('support.youth')}}">
+                    <div class="funfact-two__list__icon" >
+                        <img style="width:70px" src="{{asset('images/youth-icon.png')}}" alt="">
                     </div>
-                    <div class="volunteers-card__social"><a href="#"><i class="fab fa-twitter"></i></a><a href="#"><i class="fab fa-facebook"></i></a><a href="#"><i class="fab fa-pinterest"></i></a><a href="#"><i class="fab fa-instagram"></i></a></div>
-                 </div>
-              </div>
-           </div>
-        </div>
-     </section>
-
-     <section class="sec-pad-top sec-pad-bottom video-one" >
-        <div class="container" >
-           <div class="video-one__inner" style="background-image:url(_nuxt/video-inner-bg-1-1.DDfA7HnK.jpg);" >
-              <div class="row gutter-y-60" >
-                 <div class="col-md-12 col-lg-6" >
-                    <div class="video-one__content"  >
-                       <a href="#" class="video-one__btn video-popup" ><i class="fa fa-play" ></i><span class="video-one__btn__arrow" ></span></a>
-                       <h3 class="video-one__title count-box" >
-                        Become a Member <br>
-                        Help us to :
-                          <span class="d-inline-flex" >
-
-                             <div class="countup-wrap" >
-                                <!--[--><!--]--><span></span><!--[--><!--]-->
-                             </div>
-                          </span>
-
-                       </h3>
-                       <ul class="list-unstyled video-one__list" >
-                          <!--[-->
-                          <li ><i class="fa fa-check-circle" ></i> Provide essential healthcare.</li>
-                          <li ><i class="fa fa-check-circle" ></i> Empower through education</li>
-                          <li ><i class="fa fa-check-circle" ></i> Ensure safe housing.</li>
-                          <!--]-->
-                       </ul>
+                    <h3 class="funfact-two__list__count count-box" >
+                       <div class="countup-wrap" >
+                          <span></span>
+                       </div>
+                    </h3>
+                    <p  class="funfact-two__list__text" >Youth Empowerment and Skill Acquisition</p>
+                    </a>
+                </li>
+                <li class="funfact-two__list__item" style="--accent-color:#fdbe44;" >
+                    <a style="color:var(--paroti-black,#144047)" href="{{route('support.poverty')}}">
+                   <div class="funfact-two__list__icon" >
+                    <img style="width:70px" src="{{asset('images/poor-icon.png')}}" alt="Poverty Alleviation" >
                     </div>
-                 </div>
-                 <div id="membership-form" class="col-md-12 col-lg-6" >
-                    @livewire('membership-form')
-                 </div>
-              </div>
+                   <h3 class="funfact-two__list__count count-box" >
+                      <div class="countup-wrap" >
+                         <!--[--><!--]--><span></span><!--[--><!--]-->
+                      </div>
+                   </h3>
+                   <p class="funfact-two__list__text" >Poverty Alleviation </p>
+                    </a>
+                </li>
+                <li class="funfact-two__list__item" style="--accent-color:#138999;" >
+                    <a style="color:var(--paroti-black,#144047)" href="{{route('support.education')}}">
+                   <div class="funfact-two__list__icon" >
+                    <img style="width:70px" src="{{asset('images/edu-icon.png')}}" alt="Educational Support"/>
+                    </div>
+
+                   <h3 class="funfact-two__list__count count-box" >
+                      <div class="countup-wrap" >
+                         <!--[--><!--]--><span></span><!--[--><!--]-->
+                      </div>
+                   </h3>
+                   <p class="funfact-two__list__text" >Educational Support </p>
+                   </a>
+                </li>
+
+             </ul>
+
+
            </div>
         </div>
      </section>

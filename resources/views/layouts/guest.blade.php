@@ -19,6 +19,10 @@
         <link rel="icon" type="image/x-icon" href="{{asset('images/logo-icon.png')}}">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
         <!--[if (lt IE 9)]><script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.helper.ie8.js"></script><![endif]-->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/jquery.counterup@2.1.0/jquery.counterup.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/waypoints/lib/jquery.waypoints.min.js"></script>
+
         @vite(['resources/css/app.css', 'resources/css/style.css'])
         <link rel="stylesheet" href="_nuxt/entry.Cnz8qrmP.css">
         <link rel="stylesheet" href="_nuxt/swiper-vue.C8kddlLw.css">
@@ -33,6 +37,16 @@
         </style>
         @livewireStyles
         @stack('styles')
+        <style>
+            @media (min-width: 900px) {
+    .my-container {
+        margin: 0 100px;
+    }
+}
+.p{
+    text-align: justify!important;
+}
+        </style>
     </head>
     <body>
         <div id="__nuxt">
@@ -97,8 +111,10 @@
                                      </li>
 
                                     <li class="">
-                                       <a href="{{route('contact')}}" class="{{request()->routeIs('contact') ? 'router-link-active router-link-exact-active': ''}}">Contact</a><!---->
+                                       <a href="{{route('contact')}}" class="{{request()->routeIs('contact') ? 'router-link-active router-link-exact-active': ''}}">Contact Us</a><!---->
                                     </li>
+
+
                                     <!--]-->
                                  </ul>
                                  <div class="main-menu__right">
@@ -143,7 +159,6 @@
                            <ul class="list-unstyled site-footer__widget__links" data-v-637754db>
                               <li data-v-637754db><a href="{{route('home')}}" class="" data-v-637754db>Home</a></li>
                               <li data-v-637754db><a href="{{route('about')}}" class="" data-v-637754db>About us</a></li>
-                              <li data-v-637754db><a href="{{route('contact')}}" class="" data-v-637754db>Contact Us</a></li>
                               <li data-v-637754db><a href="{{route('donate')}}" class="" data-v-637754db>Donate</a></li>
                               <li data-v-637754db><a href="{{route('events')}}" class="" data-v-637754db>Events</a></li>
                            </ul>
@@ -172,7 +187,7 @@
                      </div>
                      <div class="col-sm-12 col-md-6 col-lg-6 col-xl-2 wow fadeInUp" data-wow-duration="1500ms" data-wow-delay="400ms">
                         <div class="site-footer__widget site-footer__widget__cta">
-                           <h3 class="site-footer__widget__title"><span>Raise Money and help them</span></h3>
+                           <h3 class="site-footer__widget__title"><span>Get involved</span></h3>
                            <a href="{{route('donate')}}" class="thm-btn thm-btn--two thm-btn--light"><span>Donate Now</span><i class="fa fa-heart" data-v-637754db></i></a>
                         </div>
                      </div>
@@ -283,7 +298,7 @@
 
             // Show the main content
             document.getElementById("main").style.display = "block";
-        }, 1000); // Delay of 1000ms (1 second)
+        }, 100); // Delay of 1000ms (1 second)
     };
 
     // Get the button

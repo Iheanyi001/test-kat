@@ -11,6 +11,10 @@ Route::get('/executive-brief', function () {
     return view('brief');
 })->name('brief');
 
+/*Route::get('/membership', function () {
+    return view('membership');
+})->name('membership');*/
+
 Route::get('/about-us', function () {
     return view('about');
 })->name('about');
