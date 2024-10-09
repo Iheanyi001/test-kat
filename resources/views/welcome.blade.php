@@ -1,5 +1,29 @@
 <x-guest-layout>
-    <section class="slider-one">
+    @push('styles')
+    <style>
+        .slider-one__btn {
+    position: relative; /* Ensure the button is positioned correctly */
+    z-index: 1000; /* Set a higher z-index to make sure it's clickable */
+}
+
+.slider-one__item {
+    position: relative; /* Ensure the content is stacked properly */
+    z-index: 5;
+}
+
+.swiper-slide {
+    position: relative;
+    z-index: 1; /* Keep the slides behind the content */
+}
+.swiper-pagination-bullets{
+    display: none!important;
+}
+.main-menu__right{
+    display:flex!important;
+}
+    </style>
+    @endpush
+<section class="slider-one">
         <div class="swiper" adaptiveheight="true">
            <!--[--><!--]-->
            <div class="swiper-wrapper">
@@ -11,7 +35,11 @@
                     <div class="container">
                        <h2 class="slider-one__title"> Building <span>Brighter</span> <br> Futures with Compassion </h2>
                        <p class="slider-one__text">Together, we can uplift communities and change lives.</p>
-                       <div class="slider-one__btns"><a href="{{route('donate')}}" class="thm-btn slider-one__btn"><span>Get involved</span></a></div>
+                        <div class="slider-one__btns">
+                            <a href="{{route('donate')}}" class="thm-btn slider-one__btn">
+                                <span>Get involved</span>
+                            </a>
+                        </div>
                     </div>
                  </div>
                  <!--]--><!---->
@@ -36,7 +64,7 @@
                        <h2 class="slider-one__title">Join Us:<br/> Make a Lasting Impact</h2>
                        <p class="slider-one__text">Be a part of a movement dedicated to sustainable change.</p>
                        <div class="slider-one__btns">
-                        <a href="{{route('donate')}}" class="thm-btn slider-one__btn"><span>Get involved</span></a></div>
+                        <a href="{{route('contact')}}" class="thm-btn slider-one__btn"><span>Get involved</span></a></div>
                     </div>
                  </div>
                  <!--]--><!---->
@@ -50,7 +78,7 @@
            <div class="swiper-pagination"></div>
            <!--[--><!--]-->
         </div>
-     </section>
+</section>
      <section class="sec-pad-top sec-pad-bottom about-two">
         <img src="_nuxt/about-2-1.mbvHjTJ1.png" class="about-two__shape-1 float-bob-x" alt="">
         <div class="container">
@@ -97,70 +125,7 @@
            </div>
         </div>
      </section>
-    <!-- <div>
-        <section class="sec-pad-top sec-pad-bottom donation-two">
-           <div class="container">
-              <div class="row gutter-y-60">
-                 <div class="col-md-12 col-lg-4">
-                    <div class="sec-title">
-                       <p class="sec-title__tagline">We’re here to help them</p>
-                       <h2 class="sec-title__title">Our Mission</h2>
-                    </div>
-                    <p class="donation-two__text">Simple yet profound: our mission is to create brighter futures and uplift lives across the region. With every project, we bring new opportunities and lasting change, making a real impact on the communities we serve—whether through medical outreach, poverty alleviation schemes, youth empowerment, or skill acquisition programs.</p>
-                 </div>
-                 <div class="col-md-12 col-lg-6">
-                    <div class="donation-two__carousel" >
-                       <div class="swiper2" >
 
-                          <div class="swiper-wrapper">
-
-                            <div class="swiper-slide" >
-
-                                <div  >
-                                   <div class="donation-card-two" style="--accent-color:#8139e7;" >
-                                      <div class="donation-card-two__bg" ></div>
-                                      <h3 class="donation-card-two__title" ><a >Medical Outreach</a></h3>
-                                      <p class="donation-card-two__text" >Providing essential healthcare services and medical supplies to underserved communities</p>
-                                      <i class="donation-card-two__icon paroti-icon-patient" ></i><a ><i class="fa fa-angle-double-right donation-card-two__link" ></i></a>
-                                      <div class="donation-card-two__shape" ></div>
-                                   </div>
-                                </div>
-
-                             </div>
-
-                             <div class="swiper-slide" >
-
-                                <div>
-                                   <div class="donation-card-two" style="--accent-color:#df5311;" >
-                                      <div class="donation-card-two__bg" ></div>
-                                      <h3 class="donation-card-two__title" ><a >Poverty Alleviation Schemes</a></h3>
-                                      <p class="donation-card-two__text" >Implementing programs aimed at reducing poverty and improving living standards</p>
-                                      <i class="donation-card-two__icon paroti-icon-organic-food" ></i><a ><i class="fa fa-angle-double-right donation-card-two__link" ></i></a>
-                                      <div class="donation-card-two__shape" ></div>
-                                   </div>
-                                </div>
-
-                             </div>
-                             <div class="swiper-slide" >
-
-                                <div>
-                                   <div class="donation-card-two" style="--accent-color:#fdbe44;" >
-                                      <div class="donation-card-two__bg" ></div>
-                                      <h3 class="donation-card-two__title" ><a >Educational Support Outreach</a></h3>
-                                      <p class="donation-card-two__text" >Facilitating programs that empower young people through education, mentorship, and leadership training</p>
-                                      <i class="donation-card-two__icon paroti-icon-education" ></i><a ><i class="fa fa-angle-double-right donation-card-two__link" ></i></a>
-                                      <div class="donation-card-two__shape" ></div>
-                                   </div>
-                                </div>
-                             </div>
-                          </div>
-                       </div>
-                    </div>
-                 </div>
-              </div>
-           </div>
-        </section>
-     </div>-->
 
      <section class="sec-pad-top sec-pad-bottom popular-causes">
         <div class="container">
@@ -173,25 +138,13 @@
                     <div  aria-hidden="true" tabindex="-1">
                         <div class="donations-card" style="--accent-color: #df5311;">
                             <div class="donations-card__image">
-                            <img style="height: 252px" src="{{asset('images/med_program/img3.jpg')}}" alt="Donation Image">
-                            <div class="donations-card__category">
-                                <a href="{{route('support.medical')}}">Medical Outreach </a>
-                            </div>
-                        </div>
-                        <div class="donations-card__content">
-                                <h3 class="donations-card__title" >
-                                    <a style="font-size: 16px" href="{{route('support.medical')}}" class="">Delivered crucial healthcare services, enhancing community health and well-being.</a>
-                                </h3>
-                                <p style="border:none!important" class="donations-card__text">The King Ateke Tom Foundation carried out a medical outreach in Rivers State, providing free healthcare services, medications, and health education to over 5000 residents, enhancing access to essential medical care.</p>
-
-                                <div class="about-two__btns mt-10" style="margin:0!important">
-                                    <a href="{{route('support.medical')}}" class="thm-btn about-two__btn" style="border-radius:40px">
-                                        <span>Continue Reading</span>
-                                    </a>
+                                <img style="height: 252px" src="{{asset('images/med_program/img3.jpg')}}" alt="Donation Image">
+                                <div class="donations-card__category">
+                                    <a href="{{route('support.medical')}}">Medical Outreach </a>
                                 </div>
-
                             </div>
                         </div>
+                        <!--- content--->
                     </div>
 
                     <div  aria-hidden="true" tabindex="-1">
@@ -202,19 +155,8 @@
                                 <a href="{{route('support.youth')}}">Youth Empowerment and Skill Acquisition</a>
                             </div>
                         </div>
-                        <div class="donations-card__content">
-                                <h3 class="donations-card__title">
-                                    <a style="font-size: 16px" href="{{route('support.youth')}}" class="">Equipped youths with skills and resources for sustainable livelihood and economic growth</a>
-                                </h3>
-                                <p style="border: none!important" class="donations-card__text">The King Ateke Tom Foundation organized a youth empowerment and skill acquisition program in Rivers State, training over 3000 young individuals in various trades and entrepreneurial skills, fostering self-reliance and economic development.</p>
-
-                        <div class="about-two__btns mt-10" style="margin:0!important">
-                            <a href="{{route('support.youth')}}" class="thm-btn about-two__btn" style="border-radius:40px">
-                                <span>Continue Reading</span>
-                            </a>
                         </div>
-                            </div>
-                        </div>
+                        <!--- content--->
                     </div>
 
 
@@ -226,19 +168,8 @@
                                 <a href="{{route('support.poverty')}}">Poverty Alleviation</a>
                             </div>
                         </div>
-                        <div class="donations-card__content">
-                                <h3 class="donations-card__title">
-                                    <a style="font-size: 16px" href="{{route('support.poverty')}}" class="">Reduced economic hardships by providing resources and opportunities for community members.</a>
-                                </h3>
-                                <p style="border:none!important" class="donations-card__text">The King Ateke Tom Foundation launched a poverty alleviation initiative, distributing essential supplies and creating job opportunities for over 2000 families, significantly improving their standard of living and economic security.</p>
-
-                                <div class="about-two__btns mt-10" style="margin:0!important">
-                                    <a href="{{route('support.poverty')}}" class="thm-btn about-two__btn" style="border-radius:40px">
-                                        <span>Continue Reading</span>
-                                    </a>
-                                </div>
-                            </div>
                         </div>
+                        <!--- content--->
                     </div>
 
                     <div  aria-hidden="true" tabindex="-1">
@@ -249,145 +180,27 @@
                                 <a href="{{route('support.education')}}">Education</a>
                             </div>
                         </div>
-                        <div class="donations-card__content">
-                                <h3 class="donations-card__title">
-                                    <a style="font-size: 16px" href="{{route('support.education')}}" class="">Promoted education by offering resources to students, ensuring a brighter future for the youth.</a>
-                                </h3>
-                                <p style="border:none!important" class="donations-card__text">The King Ateke Tom Foundation provided educational materials, scholarships, and learning aids to over 4000 students across Rivers State, enhancing access to quality education and empowering the next generation of leaders.</p>
-
-                                <div class="about-two__btns mt-10" style="margin:0!important">
-                                    <a href="{{route('support.education')}}" class="thm-btn about-two__btn" style="border-radius:40px">
-                                        <span>Continue Reading</span>
-                                    </a>
-                                </div>
-                            </div>
                         </div>
+                       <!--- content--->
                     </div>
 
                     <div  aria-hidden="true" tabindex="-1">
                         <div class="donations-card" style="--accent-color: #df5311;">
                             <div class="donations-card__image">
-                            <img style="height: 252px" src="{{asset('images/edu_program/1.jpg')}}" alt="Donation Image">
+                            <img style="height: 252px" src="{{asset('images/environment/1.jpg')}}" alt="Donation Image">
                             <div class="donations-card__category">
                                 <a href="{{route('support.environment')}}">Environmental Sustainability</a>
                             </div>
                         </div>
-                        <div class="donations-card__content">
-                                <h3 class="donations-card__title">
-                                    <a style="font-size: 16px" href="{{route('support.environment')}}" class="">Promoted environmental conservation and sustainability through community-driven efforts.</a>
-                                </h3>
-                                <p style="border: :none!important" class="donations-card__text">The King Ateke Tom Foundation led environmental sustainability campaigns, engaging communities in tree planting, waste management, and climate action initiatives, fostering a cleaner and greener environment for over 68 residents.</p>
-
-                                <div class="about-two__btns mt-10" style="margin:0!important">
-                                    <a href="{{route('support.environment')}}" class="thm-btn about-two__btn" style="border-radius:40px">
-                                        <span>Continue Reading</span>
-                                    </a>
-                                </div>
-                            </div>
                         </div>
+                        <!--- content--->
                     </div>
 
                 </div>
             </div>
         </div>
      </section>
-     <section class="sec-pad-top testimonials-one testimonials-one--bottom-pd-lg">
-        <div class="testimonials-one__bg" style="background-image:url('_nuxt/testimonials-1-bg.Cc9osmTB.jpg');"></div>
-        <div class="testimonials-one__gallery">
-           <img style="width: 70px; height: 70px; border-radius: 50%;" src="{{asset('images/test1.png')}}" alt="Gallery Image 1" class="float-bob-x">
-           <img style="width: 70px; height: 70px; border-radius: 50%;" src="{{asset('images/test3.png')}}" alt="Gallery Image 2" class="float-bob-x">
-           <img style="width: 70px; height: 70px; border-radius: 50%;" src="{{asset('images/test2.png')}}" alt="Gallery Image 3" class="float-bob-x">
-           <img style="width: 70px; height: 70px; border-radius: 50%;" src="{{asset('images/test4.png')}}" class="float-bob-x">
-        </div>
-        <div class="container">
-           <div class="row gutter-y-60">
-              <div class="col-lg-5">
-                 <div class="testimonials-one__content">
-                    <div class="sec-title">
-                       <p class="sec-title__tagline">Our feedbacks</p>
-                       <h2 class="sec-title__title">Voices of Impact: <br>Hear Their Stories</h2>
-                    </div>
-                    <p class="testimonials-one__text">The true measure of our success is found in the stories of those whose lives have been touched by the King AtekeTom Foundation. Here’s what some of our beneficiaries, partners,
-                     <br>and supporters have to say about the difference we’re making:</p>
-                    <a href="#" class="thm-btn testimonials-one__btn"><span>View all feedbacks</span></a>
-                 </div>
-              </div>
-              <div class="col-lg-7">
-                 <div>
-                    <div class="swiper">
-                       <!--[--><!--]-->
-                       <div class="swiper-wrapper">
-                          <!--[--><!--]--><!--[-->
-                          <div class="swiper-slide">
-                             <!--[-->
-                             <div class="testimonials-card" 84118bfd>
-                                <i class="paroti-icon-quote testimonials-card__icon" 84118bfd></i>
-                                <img src="{{asset('_nuxt/testimonials-item-bg-1-1.BkqDuzSL.png')}}" class="testimonials-card__bg" alt="" 84118bfd>
-                                <p class="testimonials-card__text" 84118bfd>The King AtekeTom Foundation has been a lifeline for our community. Their dedication to improving lives through education and healthcare is truly inspiring. We are grateful for their unwavering support.</p>
-                                <div class="testimonials-card__meta clearfix" 84118bfd>
-                                   <img style="width:91px; height:91px" src="{{asset('images/test1.png')}}" alt="Community Leader" 84118bfd>
-                                   <h3 class="testimonials-card__name" 84118bfd>Community Leader, </h3>
-                                   <p class="testimonials-card__designation" 84118bfd>Niger Delta</p>
-                                </div>
-                             </div>
-                             <!--]--><!---->
-                          </div>
-
-                          <div class="swiper-slide">
-                             <!--[-->
-                             <div class="testimonials-card" 84118bfd>
-                                <i class="paroti-icon-quote testimonials-card__icon" 84118bfd></i>
-                                <img src="{{asset('_nuxt/testimonials-item-bg-1-1.BkqDuzSL.png')}}" class="testimonials-card__bg" alt="" 84118bfd>
-                                <p class="testimonials-card__text" 84118bfd>The skills training and job opportunities provided by the foundation have transformed my life. I now have a stable career and can support my family with dignity. Thank you for making a difference.</p>
-                                <div class="testimonials-card__meta clearfix" 84118bfd>
-                                   <img style="width:91px; height:91px" src="{{asset('images/test3.png')}}" alt="Okochiri" 84118bfd>
-                                   <h3 class="testimonials-card__name" 84118bfd>Okochiri</h3>
-                                   <p class="testimonials-card__designation" 84118bfd>Beneficiary</p>
-                                </div>
-                             </div>
-                             <!--]--><!---->
-                          </div>
-
-                          <div class="swiper-slide">
-
-                             <div class="testimonials-card" 84118bfd>
-                                <i class="paroti-icon-quote testimonials-card__icon" 84118bfd></i><img src="_nuxt/testimonials-item-bg-1-1.BkqDuzSL.png" class="testimonials-card__bg" alt="" 84118bfd>
-                                <p class="testimonials-card__text" 84118bfd>The King Ateke Tom Foundation has truly transformed my child's education. Through their support, my daughter now has access to quality learning materials and after-school programs. Her confidence and performance have greatly improved, and we are forever grateful.</p>
-                                <div class="testimonials-card__meta clearfix" 84118bfd>
-                                   <img style="width:91px; height:91px" src="{{asset('images/test4.png')}}" alt="Mrs. Grace Uche" 84118bfd>
-                                   <h3 class="testimonials-card__name" 84118bfd>Mrs. Grace Uche</h3>
-                                   <p class="testimonials-card__designation" 84118bfd>Parent</p>
-                                </div>
-                             </div>
-
-                          </div>
-
-                          <div class="swiper-slide">
-
-                            <div class="testimonials-card" 84118bfd>
-                               <i class="paroti-icon-quote testimonials-card__icon" 84118bfd></i><img src="_nuxt/testimonials-item-bg-1-1.BkqDuzSL.png" class="testimonials-card__bg" alt="" 84118bfd>
-                               <p class="testimonials-card__text" 84118bfd>The Foundation's focus on skill acquisition and education has been a blessing to our community. My son participated in the ICT training and is now able to apply those skills in his school projects. It’s amazing to see how much he's grown</p>
-                               <div class="testimonials-card__meta clearfix" 84118bfd>
-                                  <img style="width:91px; height:91px" src="{{asset('images/test2.png')}}" alt="Mr. Adewale Sanni" 84118bfd>
-                                  <h3 class="testimonials-card__name" 84118bfd>Mr. Adewale Sanni
-                                </h3>
-                                  <p class="testimonials-card__designation" 84118bfd>Parent</p>
-                               </div>
-                            </div>
-
-                         </div>
-
-
-
-                          <!--]--><!--[--><!--]-->
-                       </div>
-                       <!----><!----><!----><!--[--><!--]-->
-                    </div>
-                 </div>
-              </div>
-           </div>
-        </div>
-     </section>
+     <x-testimonials/>
      <section class="gallery-one">
         <div class="container-fluid">
            <div class="swiper3" >

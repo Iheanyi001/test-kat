@@ -46,6 +46,9 @@
 .p{
     text-align: justify!important;
 }
+.thm-btn:after, .thm-btn:before{
+    background: #fdbe44!important;
+}
         </style>
     </head>
     <body>
@@ -325,38 +328,47 @@ function scrollToTop() {
     });
 }
 
-</script>
-<script>
     const lightbox = GLightbox({
         selector: '.glightbox',
         touchNavigation: true,
         loop: true,
         autoplayVideos: true
     });
-</script>
-<script>
 
-const swiper = new Swiper('.swiper', {
-// Optional parameters
-direction: 'horizontal',
-loop: true,
+    const swiper = new Swiper('.swiper', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: true,
 
-// If we need pagination
-pagination: {
-el: '.swiper-pagination',
-},
+    // Enable autoplay
+    autoplay: {
+        delay: 5000, // Autoplay delay in milliseconds
+        disableOnInteraction: false, // Prevent autoplay from pausing on interaction
+    },
 
-// Navigation arrows
-navigation: {
-nextEl: '.swiper-button-next',
-prevEl: '.swiper-button-prev',
-},
+    // If we need pagination
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true, // Enable pagination dots to be clickable
+    },
 
-autoplay: {
-delay: 5000,
-},
+    // Navigation arrows
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+
+    // Enable adaptive height
+    autoHeight: true,
+    // Ensure Swiper allows interaction with slide content
+    slideToClickedSlide: true,
+    preventInteractionOnTransition: false
 });
 
+
+</script>
+
+<script>
 
 const swiper2 = new Swiper('.swiper2', {
 // Optional parameters
@@ -495,6 +507,5 @@ function openNav(){
 
 
 @stack('scripts')
-<!-- Mirrored from paroti-nuxtjs.vercel.app/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 24 Sep 2024 21:28:47 GMT -->
 </html>
 
