@@ -486,7 +486,7 @@
                  </div>
 
                  <div class="about-two__btns mt-10" style="margin:0!important">
-                    <a href="{{route('donate')}}" class="thm-btn about-two__btn"
+                    <a href="{{route('donate')}}" class="my-join-us-btn thm-btn about-two__btn"
                     style="background-color:var(--paroti-black,#144047); border-radius:40px">
                         <span>Join Us</span>
                     </a>

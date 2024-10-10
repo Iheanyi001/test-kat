@@ -46,7 +46,7 @@
 .p{
     text-align: justify!important;
 }
-.thm-btn:after, .thm-btn:before{
+.my-join-us-btn:after, .my-join-us-btn:before{
     background: #fdbe44!important;
 }
         </style>
