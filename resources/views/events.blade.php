@@ -208,16 +208,25 @@
     const content = document.getElementById('dropdown-content');
 
        var eduEvent = new Swiper('.edu-event-amnesty', {
-         direction: 'horizontal',
-         slidesPerView: 1,
-         loop: true, // Loop the slides
-         autoplay: {
-           delay: 2000, // 3-second delay between slides
-           disableOnInteraction: false, // Keep autoplay running after interaction
-         },
-         pagination: {
-           el: '.swiper-pagination',
-           },
+         // Optional parameters
+    direction: 'horizontal',
+    loop: true,
+    autoplay: {
+        delay: 1500, // Change this to the desired delay in milliseconds
+        disableOnInteraction: false, // Allow autoplay to continue after user interactions
+    },
+
+    // If we need pagination
+    pagination: {
+        el: '.swiper-pagination', // Ensure you add pagination if you want to display it
+        clickable: true,
+    },
+
+    // Navigation arrows
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
        });
 
 

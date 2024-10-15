@@ -84,7 +84,7 @@
                                     <div class="topbar__social">
                                         <a href="/"><i class="fab fa-twitter"></i></a>
                                         <a href="https://www.facebook.com/kat.foundation1?mibextid=ZbWKwL"><i class="fab fa-facebook"></i></a>
-                                        <a href="/"><i class="fab fa-pinterest"></i></a>
+
                                         <a href="https://www.instagram.com/katfoundation2024/"><i class="fab fa-instagram"></i></a>
                                     </div>
 
@@ -210,7 +210,7 @@
                      <div class="site-footer__social">
                         <a href="#"><i class="fab fa-twitter"></i></a>
                         <a href="https://www.facebook.com/kat.foundation1?mibextid=ZbWKwL"><i class="fab fa-facebook"></i></a>
-                        <a href="#"><i class="fab fa-pinterest"></i></a>
+
                         <a href="https://www.instagram.com/katfoundation2024/"><i class="fab fa-instagram"></i></a>
                     </div>
                   </div>
@@ -261,7 +261,6 @@
                <ul class="mobile-nav__social" >
                   <li ><a href="{{route('home')}}" ><i class="fab fa-twitter" ></i></a></li>
                   <li ><a href="https://www.facebook.com/kat.foundation1?mibextid=ZbWKwL" ><i class="fab fa-facebook-f" ></i></a></li>
-                  <li ><a href="{{route('home')}}" ><i class="fab fa-pinterest-p" ></i></a></li>
                   <li ><a href="https://www.instagram.com/katfoundation2024/" ><i class="fab fa-instagram" ></i></a></li>
                </ul>
             </div>
