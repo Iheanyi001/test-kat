@@ -81,7 +81,7 @@
                                 </div>
 
                                 <div class="swiper-slide">
-                                <img src="{{asset('images/edu_program/6.jpeg')}}" alt="Image 6">
+                                <img src="{{asset('images/edu_program/6.jpg')}}" alt="Image 6">
                             </div>
                             <div class="swiper-slide">
                             <img src="{{asset('images/edu_program/7.jpg')}}" alt="Image 7">

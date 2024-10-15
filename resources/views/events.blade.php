@@ -21,7 +21,7 @@
         cursor: pointer;
     }
     .swiper-slide img{
-        height: 408;
+        height: 408px;
         width: auto;
     }
     .pre-amnesty .swiper-slide {
@@ -50,7 +50,7 @@
                     <div class="row">
 
                         <div class="col-lg-6" style="overflow: hidden;">
-                            <div class="pre-amnesty" style="width:100%">
+                            <div class="edu-event-amnesty" style="width:100%">
                                 <div class="swiper-wrapper">
                                     <div class="swiper-slide">
                                         <img class="my-img" src="{{asset('images/edu_program/1.jpg')}}" alt="Image 1">
@@ -72,7 +72,7 @@
                                     </div>
 
                                     <div class="swiper-slide">
-                                        <img class="my-img" src="{{asset('images/edu_program/6.jpeg')}}" alt="Image 6">
+                                        <img class="my-img" src="{{asset('images/edu_program/6.jpg')}}" alt="Image 6">
                                     </div>
                                     <div class="swiper-slide">
                                         <img class="my-img" src="{{asset('images/edu_program/7.jpg')}}" alt="Image 7">
@@ -151,7 +151,10 @@
            <div class="row gutter-y-30">
               <div class="col-md-12 col-lg-4">
                  <div  class="events-card">
-                    <div  class="events-card__image"><img  src="https://paroti-nuxtjs.vercel.app/_nuxt/events-1-1.X_RzBhDG.jpg" alt=""><img  src="https://paroti-nuxtjs.vercel.app/_nuxt/events-1-1.X_RzBhDG.jpg" class="events-card__image--hover" alt=""></div>
+                    <div  class="events-card__image">
+                        <img style="height: 426px;" src="{{asset('images/med_program/img4.jpg')}}" alt="">
+                        <img style="height: 426px;" src="{{asset('images/med_program/img4.jpg')}}" class="events-card__image--hover" alt="">
+                    </div>
                     <div  class="events-card__content">
                        <div  class="events-card__date">28 Oct.</div>
                        <ul  class="events-card__meta list-unstyled">
@@ -164,7 +167,10 @@
               </div>
               <div class="col-md-12 col-lg-4">
                  <div  class="events-card">
-                    <div  class="events-card__image"><img  src="https://paroti-nuxtjs.vercel.app/_nuxt/events-1-2.Bg2ITsv2.jpg" alt=""><img  src="https://paroti-nuxtjs.vercel.app/_nuxt/events-1-2.Bg2ITsv2.jpg" class="events-card__image--hover" alt=""></div>
+                    <div  class="events-card__image">
+                        <img style="height: 426px;" src="{{asset('images/edu_program/1.jpg')}}" alt="">
+                        <img style="height: 426px;" src="{{asset('images/edu_program/1.jpg')}}" class="events-card__image--hover" alt="">
+                    </div>
                     <div  class="events-card__content">
                        <div  class="events-card__date">10 Nov</div>
                        <ul  class="events-card__meta list-unstyled">
@@ -177,7 +183,10 @@
               </div>
               <div class="col-md-12 col-lg-4">
                  <div  class="events-card">
-                    <div  class="events-card__image"><img  src="https://paroti-nuxtjs.vercel.app/_nuxt/events-1-3.RHc6ZBpF.jpg" alt=""><img  src="https://paroti-nuxtjs.vercel.app/_nuxt/events-1-3.RHc6ZBpF.jpg" class="events-card__image--hover" alt=""></div>
+                    <div  class="events-card__image">
+                        <img style="height: 426px;" src="{{asset('images/green.webp')}}" alt="">
+                        <img style="height: 426px;" src="{{asset('images/green.webp')}}" class="events-card__image--hover" alt="">
+                    </div>
                     <div  class="events-card__content">
                        <div  class="events-card__date">2025</div>
                        <ul  class="events-card__meta list-unstyled">
@@ -198,12 +207,7 @@
         const toggleBtn = document.getElementById('toggle-content');
     const content = document.getElementById('dropdown-content');
 
-// Add click event to the button
-/*toggleBtn.addEventListener('click', function() {
-    content.classList.toggle('show');
-});*/
-
-       var preAmnesty = new Swiper('.pre-amnesty', {
+       var eduEvent = new Swiper('.edu-event-amnesty', {
          direction: 'horizontal',
          slidesPerView: 1,
          loop: true, // Loop the slides
@@ -216,18 +220,7 @@
            },
        });
 
-       var preAmnesty = new Swiper('.post-amnesty', {
-         direction: 'horizontal',
-         slidesPerView: 1,
-         loop: true, // Loop the slides
-         autoplay: {
-           delay: 2000, // 3-second delay between slides
-           disableOnInteraction: false, // Keep autoplay running after interaction
-         },
-         pagination: {
-           el: '.swiper-pagination',
-           },
-       });
+
      </script>
     @endpush
 

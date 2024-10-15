@@ -46,7 +46,7 @@ Route::get('/support/community-development', function(){
 })->name('support.community');
 
 
-Route::get('/support/educational-support ', function(){
+Route::get('/support/educational-support', function(){
     return view('support.education');
 })->name('support.education');
 

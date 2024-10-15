@@ -79,7 +79,7 @@
                                     <ul class="list-unstyled topbar__info">
                                        <li><i class="fa fa-map"></i><a href="#">No.4 Hospital road Portharcourt, Rivers State </a></li>
                                        <li><i class="fa fa-envelope-open"></i><a href="mailto:info@kingateketomfoundation.org">info@kingateketomfoundation.org</a></li>
-                                       <li><i class="fa fa-mobile"></i><a href="tel:(+234) 8037447114">(+234) 8037447114</a></li>
+                                       <li><i class="fa fa-mobile"></i><a href="tel:(+234) 7085892686">(+234) 7085892686</a></li>
                                     </ul>
                                     <div class="topbar__social">
                                         <a href="/"><i class="fab fa-twitter"></i></a>
@@ -184,7 +184,7 @@
                            <h3 class="site-footer__widget__title">Contact</h3>
                            <ul class="list-unstyled site-footer__widget__contact">
                               <li><i class="fa fa-envelope-open"></i><a href="mailto:info@kingateketomfoundation.org">info@kingateketomfoundation.org</a></li>
-                              <li><i class="fa fa-mobile"></i><a href="tel:(+234) 8037447114">(+234) 8037447114</a></li>
+                              <li><i class="fa fa-mobile"></i><a href="tel:(+234) 7085892686">(+234) 7085892686</a></li>
                            </ul>
                         </div>
                      </div>
@@ -254,7 +254,7 @@
                   </ul>
                </div>
                <ul class="mobile-nav__contact list-unstyled" >
-                  <li ><i class="fa fa-phone" ></i><a href="tel:+8898006802" >(+234) 8037447114</a></li>
+                  <li ><i class="fa fa-phone" ></i><a href="tel:+8898006802" >(+234) 7085892686</a></li>
                   <li ><i class="fa fa-envelope" ></i><a href="mailto:needhelp@company.com" >info@kingateketomfoundation.org</a></li>
                   <li ><i class="fa fa-map-marker-alt" ></i> N9. Delta state <br > Nigeria </li>
                </ul>

@@ -57,7 +57,7 @@
                     <div class="pre-amnesty" style="width:100%">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
-                                <img src="{{asset('images/poverty/2.jpg')}}" alt="Image 1">
+                                <img src="{{asset('images/poverty/2.png')}}" alt="Image 1">
                             </div>
                         </div>
                     </div>
