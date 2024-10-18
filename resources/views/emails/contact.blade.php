@@ -1,15 +1,11 @@
 <x-mail::message>
 # {{$data['subject']}}
 
+Name : {{ $data['name'] }}
 
-name : {{ $data['name'] }}
-
-email : {{ $data['email'] }}
+Email : {{ $data['email'] }}
 <x-mail::panel>
 {{ $data['message'] }}
 </x-mail::panel>
 
-
-Thanks,<br>
-{{ config('app.name') }}
 </x-mail::message>

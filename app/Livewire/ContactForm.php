@@ -37,15 +37,14 @@ class ContactForm extends Component
             'message' => $this->message,
         ]);
 
-        Mail::to('ukoiheanyiking@gmail.com')->send(new ContactEmail([
+        Mail::to('katfoundation.org@gmail.com')->send(new ContactEmail([
             'subject' => 'New contact form submission',
             'name' => $this->name,
             'email' => $this->email,
             'message' => $this->message
         ]));
 
-        // Provide feedback to the user
-        session()->flash('success', 'Your message has been sent successfully.');
+        $this->dispatch('alert', ['type' => 'success', 'message' => 'Your message has been sent successfully.']);
 
         // Reset form fields
         $this->reset(['name', 'email', 'message']);

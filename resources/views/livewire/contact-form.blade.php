@@ -27,7 +27,13 @@
                       <!---->
                    </div>
                    <div class="col-md-12">
-                      <button type="submit" class="thm-btn contact-one__btn"><span>Send message</span></button><!---->
+                      <button type="submit" class="thm-btn contact-one__btn">
+                        <span wire:loading.remove>Send message
+                        </span>
+                        <span wire:loading>
+                            Sending message...
+                        </span>
+                    </button><!---->
                    </div>
                 </div>
              </form>

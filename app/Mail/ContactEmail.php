@@ -44,13 +44,7 @@ class ContactEmail extends Mailable
         );
     }
 
-    public function build()
-    {
-        return $this->from('info@kingatekefoundation.org')  // Set the "From" address
-                    ->subject($this->data['subject'])          // Set the email subject
-                    ->markdown('emails.contact')               // Use markdown for the email content
-                    ->with('data', $this->data);               // Pass the data to the markdown view
-    }
+
 
     /**
      * Get the attachments for the message.
