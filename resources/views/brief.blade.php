@@ -11,17 +11,13 @@
 
     <section class="sec-pad-top sec-pad-bottom events-details">
        <div class="container">
-          <!--<div class="events-details__image">
-             <img src="https://paroti-nuxtjs.vercel.app/_nuxt/events-d-1.C30TlZbM.jpg" alt="">
-             <div class="events-card__date">20 Aug</div>
-          </div>-->
           <div class="row gutter-y-60">
             <div class="col-lg-4">
                 <div class="about-two__image" >
                     <div class="about-two__image__shape-1" ></div>
                     <div class="" ></div>
                     <div class="" ></div>
-                    <img src="{{asset('images/king1.png')}}" class="wow fadeInLeft" data-wow-duration="1500ms" alt="" >
+                    <img src="{{asset('images/king2.png')}}" class="wow fadeInLeft" data-wow-duration="1500ms" alt="" >
                     <div style="position: absolute;left:0;bottom: 0;height: 50px;width:100%;background-color: #df5311;padding: 5px; padding-top:10px">
                         <h1 style="text-transform: uppercase; font-size: 14px; color: white;font-weight: bold;">
                             His Royal Majesty <br/> King (Dr) Ateke Michael Tom, JP

@@ -14,7 +14,7 @@ return [
     |
     */
 
-    'default' => env('MAIL_MAILER', 'log'),
+    'default' => env('MAIL_MAILER', 'smtp'),
 
     /*
     |--------------------------------------------------------------------------
@@ -134,7 +134,7 @@ return [
 
     'from' => [
         'address' =>  'info@kingatekefoundation.org',
-        'name' =>'KingAteke Foundation',
+        'name' =>'KingAtekeTom Foundation',
     ],
 
 ];
