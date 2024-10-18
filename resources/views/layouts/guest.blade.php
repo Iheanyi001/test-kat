@@ -303,7 +303,6 @@
             document.getElementById("main").style.display = "block";
         }, 100); // Delay of 1000ms (1 second)
 
-        showToastrMessage('success', 'successfully');
     };
 
     // Get the button
@@ -510,12 +509,12 @@ function openNav(){
 
 <script>
 function handleAlert(param) {
-     console.log({param})
+
     if (!window.alertShown) {
         window.alertShown = true;
         showToastrMessage(param[0]['type'], param[0]['message']);
     }
-    //showToastrMessage(param[0]['type'], param[0]['message']);
+
 }
 // Attach event listener for custom alert event
 
@@ -541,7 +540,7 @@ Livewire.on('alert', handleAlert);
             }
         }
 
-showToastrMessage('success', 'successfully');
+
 </script>
 
 
