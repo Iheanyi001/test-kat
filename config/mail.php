@@ -133,7 +133,7 @@ return [
     */
 
     'from' => [
-        'address' =>  'info@kingatekefoundation.org',
+        'address' =>  'info@kingateketomfoundation.org',
         'name' =>'KingAtekeTom Foundation',
     ],
 
