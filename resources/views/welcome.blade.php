@@ -70,6 +70,19 @@
                  <!--]--><!---->
               </div>
               <!--]--><!--[--><!--]-->
+              <div class="swiper-slide" data-swiper-slide-index="3">
+                <!--[-->
+                <div class="slider-one__item">
+                   <div class="slider-one__image" style="background-image: url({{asset('images/homepage/hero4.jpg')}})"></div>
+                   <div class="container">
+                      <h2 class="slider-one__title">Join Us:<br/> Make a Lasting Impact on the Environment</h2>
+                      <p class="slider-one__text">Be part of a movement dedicated to sustainable environmental change.</p>
+                      <div class="slider-one__btns">
+                       <a href="{{route('contact')}}" class="thm-btn slider-one__btn"><span>Get involved</span></a></div>
+                   </div>
+                </div>
+                <!--]--><!---->
+             </div>
            </div>
            <!--[-->
            <div class="swiper-button-prev"></div>
@@ -324,6 +337,21 @@
                     </div>
                     <div class="volunteers-card__social"><a href="#"><i class="fab fa-twitter"></i></a><a href="#"><i class="fab fa-facebook"></i></a><a href="#"><i class="fab fa-pinterest"></i></a><a href="#"><i class="fab fa-instagram"></i></a></div>
                  </div>
+              </div>
+           </div>
+        </div>
+     </section>
+
+
+     <section class="sec-pad-bottom">
+        <div class="container">
+           <div class="sec-title text-center">
+
+              <h2 class="sec-title__title">Meet Our Team</h2>
+           </div>
+           <div class="row gutter-y-30">
+              <div class="col-md-12 col-lg-12">
+                 <img style="width:100%" src="{{asset('images/team.jpg')}}" alt=""/>
               </div>
            </div>
         </div>
