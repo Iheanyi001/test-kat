@@ -12,6 +12,6 @@ jobs:
       uses: SamKirkland/FTP-Deploy-Action@v4.3.5
       with:
         server: ftp.pemsecurityguard.com
-        username: test_king_ateke_227_001@test.kingateketomfoundation.org
-        password: test_king_ateke_227_001_442
+        username: king_ateke_227_001@kingateketomfoundation.org
+        password: king_ateke_227_001_442
         protocol: ftps
