@@ -105,6 +105,46 @@
                         <img src="{{asset('images/environment/recycle.webp')}}" alt="Community Recycling Efforts">
                         <div class="caption">Community Recycling Efforts</div>
                     </div>
+
+
+
+                    <div class="image-item">
+                        <img src="{{asset('images/environment/new/1.jpg')}}" alt="Community Recycling Efforts">
+                        <div class="caption">Protect Our Rivers: This pollution highlights the urgency to take action. Join us in restoring our water ways and protecting our environment for us and our future generations</div>
+                    </div>
+
+
+                    <div class="image-item">
+                        <img src="{{asset('images/environment/new/2.jpg')}}" alt="Community Recycling Efforts">
+                        <div class="caption">Oil Spills, Broken Lives: Farmlands destroyed, futures at risk. Join us in restoring livelihoods and protecting our environment</div>
+                    </div>
+
+                    <div class="image-item">
+                        <img src="{{asset('images/environment/new/3.jpg')}}" alt="Community Recycling Efforts">
+                        <div class="caption">Bushfires Ravage Our Land: Destroying habitats, homes, and livelihoods. Let's work together to prevent and protect.</div>
+                    </div>
+
+                    <div class="image-item">
+                        <img src="{{asset('images/environment/new/4.jpg')}}" alt="Community Recycling Efforts">
+                        <div class="caption">Oil-Contaminated Waters: Once a source of life, now toxic and threatening aquatic ecosystems. Let's restore these waters and protect marine life</div>
+                    </div>
+
+                    <div class="image-item">
+                        <img src="{{asset('images/environment/new/5.jpg')}}" alt="Community Recycling Efforts">
+                        <div class="caption">Flooded Homes, Displaced Lives: Climate change and poor environmental practices leave communities vulnerable. Let's take action to build resilient, sustainable futures</div>
+                    </div>
+
+                    <div class="image-item">
+                        <img src="{{asset('images/environment/new/6.jpg')}}" alt="Community Recycling Efforts">
+                        <div class="caption">Cracked Earth, Dying Land: A stark reminder of drought and environmental degradation. It's time to heal our planet and safeguard our future.</div>
+                    </div>
+
+                    <div class="image-item">
+                        <img src="{{asset('images/environment/new/7.jpg')}}" alt="Community Recycling Efforts">
+                        <div class="caption">The Earth Weeps: Our planet is in distress from pollution, deforestation, and climate change. It's time to listen and take action to heal our world</div>
+                    </div>
+
+
                 </div>
             </div>
 

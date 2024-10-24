@@ -357,7 +357,6 @@
         </div>
      </section>
 
-
      <section style="display: none!important" class="sec-pad-top sec-pad-bottom sponsor-carousel undefined" >
         <div class="container" >
            <div class="swiper4" >
