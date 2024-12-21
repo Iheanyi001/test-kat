@@ -22,7 +22,7 @@
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/jquery.counterup@2.1.0/jquery.counterup.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/waypoints/lib/jquery.waypoints.min.js"></script>
-        <link rel="stylesheet" href="{{asset('libs/toastr/toastr.css')}}">
+
         @vite(['resources/css/app.css', 'resources/css/style.css'])
         <link rel="stylesheet" href="_nuxt/entry.Cnz8qrmP.css">
         <link rel="stylesheet" href="_nuxt/swiper-vue.C8kddlLw.css">
@@ -50,6 +50,16 @@
 .my-join-us-btn:after, .my-join-us-btn:before{
     background: #fdbe44!important;
 }
+
+    #main {
+        display: none;
+    }
+
+    #preloader {
+        display: flex;
+    }
+
+
         </style>
     </head>
     <body>
@@ -293,17 +303,25 @@
 <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
 
 <script>
-    window.onload = function() {
+
+    window.addEventListener("load", function () {
         // Set a delay before hiding the preloader and showing the main content
-        setTimeout(function() {
+        setTimeout(function () {
             // Hide the preloader
-            document.getElementById("preloader").style.display = "none";
+            const preloader = document.getElementById("preloader");
+            if (preloader) {
+                preloader.style.display = "none";
+            }
 
             // Show the main content
-            document.getElementById("main").style.display = "block";
-        }, 100); // Delay of 1000ms (1 second)
+            const mainContent = document.getElementById("main");
+            if (mainContent) {
+                mainContent.style.display = "block";
+            }
+        }, 100); // Delay of 100ms
+    });
 
-    };
+
 
     // Get the button
 let scrollToTopBtn = document.getElementById("scrollToTopBtn");
@@ -507,41 +525,7 @@ function openNav(){
 </script>
 <script src="{{asset('libs/toastr/toastr.js')}}"></script>
 
-<script>
-function handleAlert(param) {
 
-    if (!window.alertShown) {
-        window.alertShown = true;
-        showToastrMessage(param[0]['type'], param[0]['message']);
-    }
-
-}
-// Attach event listener for custom alert event
-
-
-Livewire.on('alert', handleAlert);
-
-        function showToastrMessage(type, message, title = '') {
-            toastr.options = {
-                "closeButton": true,
-                "progressBar": true,
-                "positionClass": "toast-top-right",
-                "timeOut": "5000",
-            };
-
-            if (type === 'success') {
-                toastr.success(message, title);
-            } else if (type === 'error') {
-                toastr.error(message, title);
-            } else if (type === 'warning') {
-                toastr.warning(message, title);
-            } else if (type === 'info') {
-                toastr.info(message, title);
-            }
-        }
-
-
-</script>
 
 
 @stack('scripts')
