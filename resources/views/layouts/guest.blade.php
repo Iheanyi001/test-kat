@@ -88,7 +88,7 @@
                               <div class="container-fluid">
                                  <div class="topbar__inner">
                                     <ul class="list-unstyled topbar__info">
-                                       <li><i class="fa fa-map"></i><a href="#">No.4 Hospital road Portharcourt, Rivers State </a></li>
+                                       <li><i class="fa fa-map"></i><a href="#">No. 12 Dokubo Street, Conerstone off NTA Road, Portharcourt, Rivers State. </a></li>
                                        <li><i class="fa fa-envelope-open"></i><a href="mailto:info@kingateketomfoundation.org">info@kingateketomfoundation.org</a></li>
                                        <li><i class="fa fa-mobile"></i><a href="tel:(+234) 7085892686">(+234) 7085892686</a></li>
                                     </ul>
@@ -163,7 +163,7 @@
                         <div class="site-footer__widget site-footer__widget__about" data-v-637754db>
                            <a aria-current="page" href="{{route('home')}}" class="router-link-active router-link-exact-active site-footer__widget__logo" data-v-637754db>
                             <img src="{{asset('images/logo-white.png')}}" width="250" height="49" alt="Logo" data-v-637754db></a>
-                           <p class="site-footer__widget__text" data-v-637754db>No.4 Hospital road Portharcourt, Rivers State
+                           <p class="site-footer__widget__text" data-v-637754db>No. 12 Dokubo Street, Conerstone off NTA Road, Portharcourt, Rivers State.
                         </p>
                         </div>
                      </div>
