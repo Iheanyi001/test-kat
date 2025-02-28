@@ -2,8 +2,9 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\{SiteSettingController, PageController, SectionController, RoleController, SEOController};
+use Illuminate\Contracts\View\View;
 
-Route::get('/', function () {
+Route::get('/', function ():View {
     return view('welcome');
 })->name('home');
 
@@ -50,6 +51,18 @@ Route::get('/support/educational-support', function(){
     return view('support.education');
 })->name('support.education');
 
+Route::get('/events/previous/bese-2024', function(){
+    return view('events.previous.bese2024');
+})->name('events.previous.bese.2024');
+
+Route::get('/events/previous/two-school-visit-2024', function(){
+    return view('events.previous.two-school-visit-2024');
+})->name('events.previous.two-school-visit-2024');
+
+
+Route::get('/events/previous/courtesy-visit-2024', function():View{
+    return view('events.previous.courtesy-visit-2024');
+})->name('events.previous.courtesy-visit-2024');
 
 Route::get('/events/upcoming/health', function(){
     return view('events.upcoming.health');
@@ -58,7 +71,6 @@ Route::get('/events/upcoming/health', function(){
 Route::get('/events/upcoming/school', function(){
     return view('events.upcoming.school');
 })->name('events.upcoming.school');
-
 
 Route::get('/events/upcoming/green', function(){
     return view('events.upcoming.green');

@@ -92,7 +92,7 @@
                                        <li><i class="fa fa-envelope-open"></i><a href="mailto:info@kingateketomfoundation.org">info@kingateketomfoundation.org</a></li>
                                        <li><i class="fa fa-mobile"></i><a href="tel:(+234) 7085892686">(+234) 7085892686</a></li>
                                     </ul>
-                                    <div class="topbar__social">
+                                    <div class="topbar__social" style="padding:5px 20px!important">
                                         <a href="/"><i class="fab fa-twitter"></i></a>
                                         <a href="https://www.facebook.com/kat.foundation1?mibextid=ZbWKwL"><i class="fab fa-facebook"></i></a>
 
