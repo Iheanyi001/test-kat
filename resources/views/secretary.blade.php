@@ -5,7 +5,7 @@
               <li><a href="/">Home</a></li>
               <li><span>Our Teams</span></li>
            </ul>
-           <h2 class="page-header__title">Executive Secretary – King Ateke Tom Foundation</h2>
+           <h2 class="page-header__title">Executive Secretary</h2>
         </div>
     </section>
 
