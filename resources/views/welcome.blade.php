@@ -350,7 +350,17 @@
               <h2 class="sec-title__title">Meet Our Team</h2>
            </div>
            <div class="row gutter-y-30">
-              <div class="col-md-12 col-lg-12">
+            <div class="col-md-6 col-lg-4">
+                <div class="volunteers-card">
+                   <h3 style="font-size: 20px;"  class="volunteers-card__title"><a href="{{ route('secretary') }}">Dr. Chioma Onyenze</a></h3>
+                   <p class="volunteers-card__designation">Executive Secretary</p>
+                   <div class="volunteers-card__image">
+                       <img style="height: 350px; width: 85%;" src="{{asset('images/exe-sec.jpg')}}" alt="">
+                   </div>
+                   <div class="volunteers-card__social"><a href="{{ route('secretary') }}"><i class="fab fa-twitter"></i></a><a href="#"><i class="fab fa-facebook"></i></a><a href="#"><i class="fab fa-pinterest"></i></a><a href="#"><i class="fab fa-instagram"></i></a></div>
+                </div>
+             </div>
+              <div class="col-md-6 col-lg-8">
                  <img style="width:100%" src="{{asset('images/team.jpg')}}" alt=""/>
               </div>
            </div>

@@ -79,7 +79,7 @@
                     <h3 class="about-one__name">His Royal Majesty, King (Dr) Ateke Michael Tom, JP</h3>
                     <h3>Amayanabo of Okochiri Kingdom  </h3>
                     <p class="about-one__designation">Chairman, Board of Trustees, King AtekeTom Foundation</p>
-                </div>
+                    </div>
                 </div>
              </div>
 
