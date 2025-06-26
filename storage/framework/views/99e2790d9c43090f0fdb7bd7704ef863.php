@@ -179,7 +179,7 @@
                         <div class="caption">Eco-Friendly Farming</div>
                     </div>
                     <!-- Image 4 -->
-                    <div class="image-item" data-src="<?php echo e(asset('images/environment/10.jpg')); ?>">
+                    <div class="image-item" data-src="<?php echo e(asset('images/environment/recycle.webp')); ?>">
                         <img src="<?php echo e(asset('images/environment/recycle.webp')); ?>" alt="Community Recycling Efforts">
                         <div class="caption">Community Recycling Efforts</div>
                     </div>
