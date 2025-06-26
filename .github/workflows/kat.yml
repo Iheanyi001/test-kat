@@ -11,7 +11,7 @@ jobs:
     - name: 📂 Sync files
       uses: SamKirkland/FTP-Deploy-Action@v4.3.5
       with:
-        server: ftp.pemsecurityguard.com
+        server: ftp.pemsecurityservices.com
         username: king_ateke_227_001@kingateketomfoundation.org
         password: king_ateke_227_001_442
         protocol: ftps

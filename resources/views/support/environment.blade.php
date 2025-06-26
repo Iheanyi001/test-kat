@@ -58,6 +58,55 @@
             color: #555; /* Darker grey for captions */
         }
 
+
+        /* styles.css (or inside a <style> block) */
+
+.image-item img {
+
+  transition: transform .2s;
+}
+.image-item:hover img {
+  transform: scale(1.05);
+}
+
+/* Modal backdrop */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.8);
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+.modal img {
+  max-width: 90%;
+  max-height: 90%;
+  box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+.modal.show {
+  display: flex;
+}
+
+/* close “×” */
+.modal-close {
+  position: absolute;
+  top: 1rem;
+  right: 1.5rem;
+  font-size: 2rem;
+  color: #fff;
+  cursor: pointer;
+  user-select: none;
+}
+
+@media (max-width: 768px) {
+    .images-container {
+        grid-template-columns: none; /* Two columns on smaller screens */
+    }
+}
+
+
     </style>
     @endpush
     <section class="page-header" style="background-image: url({{asset('_nuxt/page-header-1-1.BAD7W5SW.jpg')}}); padding-bottom: 5.375rem; padding-top: 5.375rem;">
@@ -76,6 +125,26 @@
         <div class="container">
            <div class="row">
 
+            <div class="container mb-5">
+                <h1>Green Rivers Initiative</h1>
+                <div class="content">
+                    <p>The Green Rivers Initiative is King Ateke Tom Foundation’s flagship environmental project focused on restoring and preserving the natural ecosystem of Rivers State. Through this initiative, we are planting 10,000 trees across the 23 LGA"s of Rivers State to combat deforestation, reduce carbon emissions, restore biodiversity and land degradation, combat erosion and promote climate resilience. The project also includes awareness campaigns, school-based environmental education, and community involvement to foster a culture of environmental responsibility and sustainability.
+                    This 10,000 trees by King Ateke Tom launched on the 5th of June 2025 (World Environment Day)</p>
+                </div>
+
+
+                <div class="images-container">
+                    <!-- Image 1 -->
+                    @foreach([['img'=> 'images/rivers_green/2.jpg', 'title'=>''], ['img'=> 'images/rivers_green/3.jpg', 'title'=>''], ['img'=> 'images/rivers_green/4.jpg', 'title'=>''], ['img'=> 'images/rivers_green/5.jpg', 'title'=>'']] as $key => $image)
+                        <div class="image-item" data-src="{{asset($image['img'])}}">
+                            <img src="{{asset($image['img'])}}"  alt="{{$image['title']}}">
+                            <div class="caption">{{$image['title']}}</div>
+                        </div>
+                    @endforeach
+
+                </div>
+            </div>
+
             <div class="container">
                 <h1>Environmental Sustainability</h1>
                 <div class="content">
@@ -86,60 +155,60 @@
 
                 <div class="images-container">
                     <!-- Image 1 -->
-                    <div class="image-item">
+                    <div class="image-item" data-src="{{asset('images/environment/8.jpg')}}">
                         <img src="{{asset('images/environment/8.jpg')}}" alt="Reforestation Project">
                         <div class="caption">Reforestation Project</div>
                     </div>
                     <!-- Image 2 -->
-                    <div class="image-item">
+                    <div class="image-item" data-src="{{asset('images/environment/5.jpg')}}">
                         <img src="{{asset('images/environment/5.jpg')}}" alt="Clean Energy Initiative">
                         <div class="caption">Clean Energy Initiative</div>
                     </div>
                     <!-- Image 3 -->
-                    <div class="image-item">
+                    <div class="image-item" data-src="{{asset('images/environment/9.jpg')}}">
                         <img src="{{asset('images/environment/9.jpg')}}" alt="Eco-Friendly Farming">
                         <div class="caption">Eco-Friendly Farming</div>
                     </div>
                     <!-- Image 4 -->
-                    <div class="image-item">
+                    <div class="image-item" data-src="{{asset('images/environment/recycle.webp')}}">
                         <img src="{{asset('images/environment/recycle.webp')}}" alt="Community Recycling Efforts">
                         <div class="caption">Community Recycling Efforts</div>
                     </div>
 
 
 
-                    <div class="image-item">
+                    <div class="image-item" data-src="{{asset('images/environment/new/1.jpg')}}">
                         <img src="{{asset('images/environment/new/1.jpg')}}" alt="Community Recycling Efforts">
                         <div class="caption">Protect Our Rivers: This pollution highlights the urgency to take action. Join us in restoring our water ways and protecting our environment for us and our future generations</div>
                     </div>
 
 
-                    <div class="image-item">
+                    <div class="image-item" data-src="{{asset('images/environment/new/2.jpg')}}">
                         <img src="{{asset('images/environment/new/2.jpg')}}" alt="Community Recycling Efforts">
                         <div class="caption">Oil Spills, Broken Lives: Farmlands destroyed, futures at risk. Join us in restoring livelihoods and protecting our environment</div>
                     </div>
 
-                    <div class="image-item">
+                    <div class="image-item" data-src="{{asset('images/environment/new/3.jpg')}}">
                         <img src="{{asset('images/environment/new/3.jpg')}}" alt="Community Recycling Efforts">
                         <div class="caption">Bushfires Ravage Our Land: Destroying habitats, homes, and livelihoods. Let's work together to prevent and protect.</div>
                     </div>
 
-                    <div class="image-item">
+                    <div class="image-item" data-src="{{asset('images/environment/new/4.jpg')}}">
                         <img src="{{asset('images/environment/new/4.jpg')}}" alt="Community Recycling Efforts">
                         <div class="caption">Oil-Contaminated Waters: Once a source of life, now toxic and threatening aquatic ecosystems. Let's restore these waters and protect marine life</div>
                     </div>
 
-                    <div class="image-item">
+                    <div class="image-item" data-src="{{asset('images/environment/new/5.jpg')}}">
                         <img src="{{asset('images/environment/new/5.jpg')}}" alt="Community Recycling Efforts">
                         <div class="caption">Flooded Homes, Displaced Lives: Climate change and poor environmental practices leave communities vulnerable. Let's take action to build resilient, sustainable futures</div>
                     </div>
 
-                    <div class="image-item">
+                    <div class="image-item" data-src="{{asset('images/environment/new/6.jpg')}}">
                         <img src="{{asset('images/environment/new/6.jpg')}}" alt="Community Recycling Efforts">
                         <div class="caption">Cracked Earth, Dying Land: A stark reminder of drought and environmental degradation. It's time to heal our planet and safeguard our future.</div>
                     </div>
 
-                    <div class="image-item">
+                    <div class="image-item" data-src="{{asset('images/environment/new/7.jpg')}}">
                         <img src="{{asset('images/environment/new/7.jpg')}}" alt="Community Recycling Efforts">
                         <div class="caption">The Earth Weeps: Our planet is in distress from pollution, deforestation, and climate change. It's time to listen and take action to heal our world</div>
                     </div>
@@ -150,6 +219,52 @@
 
         </div>
     </section>
+
+    <!-- Modal -->
+<div id="image-modal" class="modal">
+    <span id="modal-close" class="modal-close">&times;</span>
+  <img id="modal-img" src="" alt="Preview">
+</div>
+
+    @push('scripts')
+    <!-- scripts.js (or inside a <script> block) -->
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const modal = document.getElementById('image-modal');
+    const modalImg = document.getElementById('modal-img');
+    const closeBtn  = document.getElementById('modal-close');
+
+    // When you hover over any .image-item, show the modal
+    document.querySelectorAll('.image-item').forEach(item => {
+    item.addEventListener('click', () => {
+      modalImg.src = item.dataset.src;
+      modal.classList.add('show');
+    });
+  });
+
+    // When your mouse leaves the modal area, hide it
+    modal.addEventListener('mouseleave', () => {
+      modal.classList.remove('show');
+      modalImg.src = '';
+    });
+
+    // Close when clicking the ×
+    closeBtn.addEventListener('click', () => {
+      modal.classList.remove('show');
+      modalImg.src = '';
+    });
+
+    // Also close if clicking outside the image
+    modal.addEventListener('click', (e) => {
+      if (e.target === modal) {
+        modal.classList.remove('show');
+        modalImg.src = '';
+      }
+    });
+  });
+</script>
+
+    @endpush
 
 </x-guest-layout>
 
